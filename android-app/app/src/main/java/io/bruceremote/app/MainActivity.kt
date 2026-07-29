@@ -18,6 +18,8 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
+import io.bruceremote.app.firmware.FirmwareUpdateChecker
 import io.bruceremote.app.protocol.BruceCommandQueue
 import io.bruceremote.app.protocol.BruceDeviceIdentityParser
 import io.bruceremote.app.protocol.BruceLineParser
@@ -134,6 +136,9 @@ class MainActivity :
         configureActions()
         setRemoteControlsEnabled(false)
         usbController.start(intent)
+
+        // Check for firmware updates on GitHub (respects 24h interval)
+        FirmwareUpdateChecker(this).checkOnStartup(lifecycleScope)
     }
 
     override fun onNewIntent(intent: Intent) {

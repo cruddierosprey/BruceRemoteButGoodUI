@@ -69,4 +69,22 @@
     <string name="firmware_patch_complete">Signed package verified and applied. The authenticated output is ready to flash.</string>
     <string name="firmware_confirmation_title">Confirm firmware write</string>
     <string name="firmware_confirmation_action">Write and verify</string>
+
+    <!-- GitHub firmware download -->
+    <string name="download_from_github">Download from GitHub</string>
+    <string name="download_from_github_description">Download the latest official firmware release directly from GitHub.</string>
+    <string name="check_github_releases">Check GitHub Releases</string>
+    <string name="github_status_idle">Tap to check for latest firmware</string>
+    <string name="download_firmware">Download Firmware</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="update_available">Update available: %1$s</string>
+    <string name="downloading_firmware">Downloading firmware…</string>
+    <string name="download_complete">Download complete</string>
+    <string name="download_failed">Download failed: %1$s</string>
+    <string name="no_updates">No updates available</string>
+    <string name="update_notification_title">BruceRemote Firmware Update</string>
+    <string name="update_notification_text">New firmware %1$s is available</string>
+    <string name="update_notification_big_text">New firmware %1$s (%2$s) is available. Tap to open the firmware installer.</string>
+    <string name="update_channel_name">Firmware Updates</string>
+    <string name="update_channel_description">Notifications for new BruceRemote firmware releases</string>
 </resources>

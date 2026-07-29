@@ -23,6 +23,7 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
 import io.bruceremote.app.firmware.AppliedFirmware
 import io.bruceremote.app.firmware.DeviceProfile
 import io.bruceremote.app.firmware.DeviceProfiles
@@ -30,6 +31,7 @@ import io.bruceremote.app.firmware.FirmwareLimits
 import io.bruceremote.app.firmware.FirmwareManifestVerifier
 import io.bruceremote.app.firmware.FirmwarePackageEngine
 import io.bruceremote.app.firmware.FlasherUsbDevice
+import io.bruceremote.app.firmware.GitHubReleaseClient
 import io.bruceremote.app.firmware.ManifestVerificationPolicy
 import io.bruceremote.app.firmware.TrustedKeyRing
 import io.bruceremote.app.firmware.UsbSerialFlasherTransport
@@ -79,6 +81,10 @@ class FirmwareActivity : AppCompatActivity() {
     private lateinit var flashButton: Button
     private lateinit var cancelButton: Button
     private lateinit var backButton: Button
+    private lateinit var checkGitHubButton: Button
+    private lateinit var downloadFirmwareButton: Button
+    private lateinit var githubProgressBar: ProgressBar
+    private lateinit var githubStatusText: TextView
 
     private val worker: ExecutorService = Executors.newSingleThreadExecutor()
     private val limits = FirmwareLimits()
@@ -102,6 +108,8 @@ class FirmwareActivity : AppCompatActivity() {
     private var pendingPermission: PendingPermission? = null
     private var runningOperation: RunningOperation? = null
     private var receiverRegistered = false
+    private var latestGitHubRelease: GitHubReleaseClient.Release? = null
+    private var downloadedFirmwareFile: java.io.File? = null
 
     @Volatile
     private var cancellationToken: FlasherCancellationToken? = null
@@ -247,6 +255,10 @@ class FirmwareActivity : AppCompatActivity() {
         flashButton = findViewById(R.id.flashFirmwareButton)
         cancelButton = findViewById(R.id.cancelFirmwareButton)
         backButton = findViewById(R.id.firmwareBackButton)
+        checkGitHubButton = findViewById(R.id.checkGitHubButton)
+        downloadFirmwareButton = findViewById(R.id.downloadFirmwareButton)
+        githubProgressBar = findViewById(R.id.githubProgressBar)
+        githubStatusText = findViewById(R.id.githubStatusText)
 
         selectionButtons += listOf(
             findViewById(R.id.chooseMergedButton),
@@ -313,6 +325,8 @@ class FirmwareActivity : AppCompatActivity() {
             cancelButton.isEnabled = false
             showStatus(getString(R.string.firmware_cancel_requested), StatusTone.WORKING)
         }
+        checkGitHubButton.setOnClickListener { checkGitHubForFirmware() }
+        downloadFirmwareButton.setOnClickListener { downloadFirmwareFromGitHub() }
     }
 
     private fun registerUsbReceiver() {
@@ -1203,6 +1217,94 @@ class FirmwareActivity : AppCompatActivity() {
             is ReadyFirmware.ImportedMerged -> true
             is ReadyFirmware.SignedPatch -> applied.profile.boardId == profile.boardId
         }
+
+    private fun checkGitHubForFirmware() {
+        val profile = selectedProfile()
+        githubProgressBar.visibility = View.VISIBLE
+        githubStatusText.text = getString(R.string.checking_for_updates)
+        checkGitHubButton.isEnabled = false
+        downloadFirmwareButton.visibility = View.GONE
+
+        lifecycleScope.launchWhenStarted {
+            val client = GitHubReleaseClient(this@FirmwareActivity)
+            val release = client.fetchLatestRelease()
+
+            githubProgressBar.visibility = View.GONE
+            checkGitHubButton.isEnabled = true
+
+            if (release == null) {
+                githubStatusText.text = getString(R.string.download_failed, "Network error")
+                return@launchWhenStarted
+            }
+
+            val asset = release.findAssetForBoard(profile.boardId)
+            if (asset == null) {
+                githubStatusText.text = getString(
+                    R.string.download_failed,
+                    "No firmware for ${profile.displayName} in ${release.tagName}",
+                )
+                return@launchWhenStarted
+            }
+
+            latestGitHubRelease = release
+            githubStatusText.text = getString(
+                R.string.update_available,
+                "${release.tagName} — ${asset.name} (${formatBytes(asset.size)})",
+            )
+            downloadFirmwareButton.visibility = View.VISIBLE
+            downloadFirmwareButton.isEnabled = true
+            showStatus(
+                "GitHub release ${release.tagName} found. Tap Download to fetch firmware.",
+                StatusTone.SUCCESS,
+            )
+        }
+    }
+
+    private fun downloadFirmwareFromGitHub() {
+        val release = latestGitHubRelease ?: return
+        val profile = selectedProfile()
+        val asset = release.findAssetForBoard(profile.boardId) ?: return
+
+        githubProgressBar.visibility = View.VISIBLE
+        githubProgressBar.isIndeterminate = false
+        githubProgressBar.progress = 0
+        downloadFirmwareButton.isEnabled = false
+        githubStatusText.text = getString(R.string.downloading_firmware)
+
+        lifecycleScope.launchWhenStarted {
+            val client = GitHubReleaseClient(this@FirmwareActivity)
+            try {
+                val result = client.downloadAsset(asset) { downloaded, total ->
+                    val percent = if (total > 0) ((downloaded * 100) / total).toInt() else 0
+                    githubProgressBar.progress = percent
+                    githubStatusText.text = "Downloading… $percent%"
+                }
+
+                downloadedFirmwareFile = result.file
+                githubProgressBar.visibility = View.GONE
+                githubStatusText.text = getString(R.string.download_complete)
+
+                // Convert downloaded file to SelectedDocument and set as merged firmware
+                val uri = Uri.fromFile(result.file)
+                val document = SelectedDocument(
+                    uri = uri,
+                    name = result.asset.name,
+                    sizeBytes = result.asset.size,
+                )
+                mergedDocument = document
+                mergedFileText.text = document.displayText()
+                replaceReadyFirmware(ReadyFirmware.ImportedMerged(document))
+                showStatus(
+                    "Firmware downloaded from GitHub. Identify target before flashing.",
+                    StatusTone.SUCCESS,
+                )
+            } catch (e: Exception) {
+                githubProgressBar.visibility = View.GONE
+                githubStatusText.text = getString(R.string.download_failed, e.message ?: "Unknown error")
+                downloadFirmwareButton.isEnabled = true
+            }
+        }
+    }
 
     private fun formatBytes(bytes: Long): String {
         if (bytes < 1024L) return "$bytes B"
