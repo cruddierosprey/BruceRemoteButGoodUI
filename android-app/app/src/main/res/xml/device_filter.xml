@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- QinHeng/WCH CH9102 family used by the M5StickC Plus2. -->
+    <usb-device vendor-id="6790" />
+
+    <!-- Espressif native USB, used by ESP32-S3 boards such as Cardputer ADV. -->
+    <usb-device vendor-id="12346" />
+
+    <!-- CDC ACM devices, including interface-class and IAD/composite variants. -->
+    <usb-device
+        class="2"
+        subclass="2" />
+    <usb-device
+        class="239"
+        subclass="2"
+        protocol="1" />
+</resources>

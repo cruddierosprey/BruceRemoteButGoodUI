@@ -1,0 +1,2 @@
+51b197f93150d3d6594ab2ee838a7c66a739d5175710f5a099f6d64c940be4af  Bruce-Remote-cardputer-adv.bin
+b2385f70f1a7648448d7d8fe1f6ab89af15778aea5c7884920ca26cb76f315f9  Bruce-Remote-m5stickc-plus2.bin

@@ -1,0 +1,832 @@
+src/modules/rfid/ST25R3916.cpp: In member function 'int ST25R3916::_handleListenLoop(uint32_t)':
+src/modules/rfid/ST25R3916.cpp:1204:30: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1204 |                     if (addr < 256) {
+      |                         ~~~~~^~~~~
+src/modules/rfid/PN532.cpp: In member function 'virtual int PN532::emulate()':
+src/modules/rfid/PN532.cpp:696:18: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  696 |                 );
+      |                  ^
+src/modules/rfid/ST25R3916.cpp: At global scope:
+src/modules/rfid/ST25R3916.cpp:25:20: warning: 'const char* _stateStr(rfalNfcState)' defined but not used [-Wunused-function]
+   25 | static const char *_stateStr(rfalNfcState st) {
+      |                    ^~~~~~~~~
+src/modules/rfid/PN532KillerTools.cpp: In member function 'bool PN532KillerTools::enableBleDataTransfer()':
+src/modules/rfid/PN532KillerTools.cpp:770:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+  770 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/rfid/PN532KillerTools.cpp:14:
+.pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/reverseShell/reverseShell.cpp: In lambda function:
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PING' not handled in switch [-Wswitch]
+   22 |         switch (type) {
+      |                ^
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PONG' not handled in switch [-Wswitch]
+src/modules/wifi/wifi_recover.cpp:611:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  611 | hmac_sha1_20w(const HmacSha1Pre &pre, const uint32_t data[5], uint32_t out[5]) {
+      | ^~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:478:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  478 | sha1_transform_20w(uint32_t state[5], const uint32_t words[5]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:444:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  444 | sha1_transform_20b(uint32_t state[5], const uint8_t data[20]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'void hmac_sha1_20(const HmacSha1Pre&, const uint8_t*, uint8_t*)' defined but not used [-Wunused-function]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+src/modules/wifi/karma_attack.cpp: In function 'void karma_setup()':
+src/modules/wifi/karma_attack.cpp:2659:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2659 |     attackConfig.highTierDuration = 180000;
+      |                                     ^~~~~~
+src/modules/wifi/karma_attack.cpp:2665:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2665 |     attackConfig.extendedDuration = 180000;
+      |                                     ^~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+*** [.pio\build\m5stack-cardputer\firmware.elf] Error 1
+========================= [FAILED] Took 263.41 seconds =========================
+PermissionError: Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\__main__.py", line 103, in main
+    cli()  # pylint: disable=no-value-for-parameter
+    ^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\core.py", line 1514, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\core.py", line 1435, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\cli.py", line 85, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\core.py", line 1902, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\core.py", line 1298, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\core.py", line 853, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\click\decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\run\cli.py", line 147, in cli
+    process_env(
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\run\cli.py", line 210, in process_env
+    ).process()
+      ^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\run\processor.py", line 81, in process
+    install_project_env_dependencies(
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\commands\install.py", line 133, in install_project_env_dependencies
+    _install_project_env_libraries(project_env, options),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\commands\install.py", line 253, in _install_project_env_libraries
+    env_lm.install(
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\manager\_install.py", line 46, in install
+    self.lock()
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\manager\base.py", line 99, in lock
+    self._lockfile.acquire()
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\lockfile.py", line 95, in acquire
+    return self._lock()
+           ^^^^^^^^^^^^
+  File "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\.venv\Lib\site-packages\platformio\package\lockfile.py", line 65, in _lock
+    self._fp = open(  # pylint: disable=consider-using-with
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Adam\\Documents\\Codex\\2026-07-24\\i-have-a-cardputer-adv-and\\bruce\\.pio\\libdeps\\m5stack-cplus2.lock'
+
+============================================================
+
+An unexpected error occurred. Further steps:
+
+* Verify that you have the latest version of PlatformIO using
+  `python -m pip install -U platformio` command
+
+* Try to find answer in FAQ Troubleshooting section
+  https://docs.platformio.org/page/faq/index.html
+
+* Report this problem to the developers
+  https://github.com/platformio/platformio-core/issues
+
+============================================================
+
+/mquickjs.c: In function 'js_vprintf':
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:746:21: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  746 |                 buf = "null";
+      |                     ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:790:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  790 |                         buf = "null";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:793:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  793 |                         buf = "undefined";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:796:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                         buf = "uninitialized";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:799:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  799 |                         buf = JS_VALUE_GET_SPECIAL_VALUE(val) ? "true" : "false";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:805:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  805 |                         buf = "[tag]";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/mquickjs/mquickjs.c:820:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  820 |                         buf = "[mtag]";
+      |                             ^
+.pio/libdeps/m5stack-cardputer/ESP32-PSRamFS/src/pfs.c:38:4: warning: #warning "No SPIRAM detected, will use heap" [-Wcpp]
+   38 |   #warning "No SPIRAM detected, will use heap"
+      |    ^~~~~~~
+.pio/libdeps/m5stack-cardputer/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+  599 | #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+      |                      ^
+.pio/libdeps/m5stack-cardputer/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+  600 | #  undef interrupts() portEXIT_CRITICAL(&mux);}
+      |                    ^
+.pio/libdeps/m5stack-cardputer/FastLED/src/platforms/esp/32/rmt_5/idf5_rmt.cpp:8:2: warning: #warning "FASTLED_RMT_BUILTIN_DRIVER is not supported in RMT5 and will be ignored." [-Wcpp]
+    8 | #warning "FASTLED_RMT_BUILTIN_DRIVER is not supported in RMT5 and will be ignored."
+      |  ^~~~~~~
+In file included from .pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/driver.h:9,
+                 from .pio/libdeps/m5stack-cardputer/FastLED/src/platforms/esp/32/clockless_i2s_esp32s3.cpp:20:
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h: In member function 'void fl::I2SClocklessLedDriveresp32S3::_initled(uint8_t*, const int*, int, int)':
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:397:20: warning: 'esp_lcd_i80_bus_config_t::<unnamed union>::psram_trans_align' is deprecated [-Wdeprecated-declarations]
+  397 |         bus_config.psram_trans_align = LCD_DRIVER_PSRAM_DATA_ALIGNMENT;
+      |                    ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_panel_io.h:11,
+                 from .pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:42:
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:33:16: note: declared here
+   33 |         size_t psram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from PSRAM */
+      |                ^~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:397:20: warning: 'esp_lcd_i80_bus_config_t::<unnamed union>::psram_trans_align' is deprecated [-Wdeprecated-declarations]
+  397 |         bus_config.psram_trans_align = LCD_DRIVER_PSRAM_DATA_ALIGNMENT;
+      |                    ^~~~~~~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:33:16: note: declared here
+   33 |         size_t psram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from PSRAM */
+      |                ^~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:397:20: warning: 'esp_lcd_i80_bus_config_t::<unnamed union>::psram_trans_align' is deprecated [-Wdeprecated-declarations]
+  397 |         bus_config.psram_trans_align = LCD_DRIVER_PSRAM_DATA_ALIGNMENT;
+      |                    ^~~~~~~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:33:16: note: declared here
+   33 |         size_t psram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from PSRAM */
+      |                ^~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:398:20: warning: 'esp_lcd_i80_bus_config_t::sram_trans_align' is deprecated [-Wdeprecated-declarations]
+  398 |         bus_config.sram_trans_align = 4;
+      |                    ^~~~~~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:36:12: note: declared here
+   36 |     size_t sram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from SRAM */
+      |            ^~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:398:20: warning: 'esp_lcd_i80_bus_config_t::sram_trans_align' is deprecated [-Wdeprecated-declarations]
+  398 |         bus_config.sram_trans_align = 4;
+      |                    ^~~~~~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:36:12: note: declared here
+   36 |     size_t sram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from SRAM */
+      |            ^~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/FastLED/src/third_party/yves/I2SClockLessLedDriveresp32s3/src/I2SClockLessLedDriveresp32s3.h:398:20: warning: 'esp_lcd_i80_bus_config_t::sram_trans_align' is deprecated [-Wdeprecated-declarations]
+  398 |         bus_config.sram_trans_align = 4;
+      |                    ^~~~~~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/esp_lcd/include/esp_lcd_io_i80.h:36:12: note: declared here
+   36 |     size_t sram_trans_align __attribute__((deprecated)); /*!< DMA transfer alignment for data allocated from SRAM */
+      |            ^~~~~~~~~~~~~~~~
+lib/Bad_Usb_Lib/BleKeyboard.cpp: In member function 'void BleKeyboard::begin(const uint8_t*, uint16_t)':
+lib/Bad_Usb_Lib/BleKeyboard.cpp:181:23: warning: 'void NimBLEHIDDevice::startServices()' is deprecated: Services are now started by the server when start() is called, this function is no longer needed and will be removed in a future release. [-Wdeprecated-declarations]
+  181 |     hid->startServices();
+      |     ~~~~~~~~~~~~~~~~~~^~
+In file included from lib/Bad_Usb_Lib/BleKeyboard.h:10,
+                 from lib/Bad_Usb_Lib/BleKeyboard.cpp:1:
+.pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEHIDDevice.h:52:27: note: declared here
+   52 |     void                  startServices() __attribute__((deprecated("Services are now started by the server when start() is called, "
+      |                           ^~~~~~~~~~~~~
+src/core/config.cpp: In member function 'void BruceConfig::validateBadUSBBLEKeyDelay()':
+src/core/config.cpp:802:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  802 |     if (badUSBBLEKeyDelay < 0) badUSBBLEKeyDelay = 0;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+In file included from src/core/display.cpp:1868:
+.pio/libdeps/m5stack-cardputer/PNGdec/src/PNGdec.h:217:9: warning: "INTELSHORT" redefined
+  217 | #define INTELSHORT(p) ((*p) + (*(p+1)<<8))
+      |         ^~~~~~~~~~
+In file included from src/core/display.h:33,
+                 from src/core/display.cpp:1:
+.pio/libdeps/m5stack-cardputer/AnimatedGIF/src/AnimatedGIF.h:289:9: note: this is the location of the previous definition
+  289 | #define INTELSHORT(p) (*(uint16_t *)p)
+      |         ^~~~~~~~~~
+.pio/libdeps/m5stack-cardputer/PNGdec/src/PNGdec.h:218:9: warning: "INTELLONG" redefined
+  218 | #define INTELLONG(p) ((*p) + (*(p+1)<<8) + (*(p+2)<<16) + (*(p+3)<<24))
+      |         ^~~~~~~~~
+.pio/libdeps/m5stack-cardputer/AnimatedGIF/src/AnimatedGIF.h:290:9: note: this is the location of the previous definition
+  290 | #define INTELLONG(p) (*(uint32_t *)p)
+      |         ^~~~~~~~~
+src/core/ram_profile.cpp: In function 'void ramProfileLog(const char*)':
+src/core/ram_profile.cpp:24:54: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                    ~~^
+      |                                                      |
+      |                                                      unsigned int
+      |                                                    %7lu
+......
+   28 |         freeHeap,
+      |         ~~~~~~~~                                      
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:24:66: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                                ~~^
+      |                                                                  |
+      |                                                                  unsigned int
+      |                                                                %7lu
+......
+   29 |         minFreeEver,
+      |         ~~~~~~~~~~~                                               
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:24:86: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                                                    ~~^
+      |                                                                                      |
+      |                                                                                      unsigned int
+      |                                                                                    %7lu
+......
+   30 |         internalFree,
+      |         ~~~~~~~~~~~~                                                                  
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:20: warning: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                  ~~^
+      |                    |
+      |                    unsigned int
+      |                  %7lu
+......
+   31 |         internalLargest,
+      |         ~~~~~~~~~~~~~~~
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:28: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                          ~~^
+      |                            |
+      |                            unsigned int
+      |                          %7lu
+......
+   32 |         dmaLargest,
+      |         ~~~~~~~~~~          
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:45: warning: format '%u' expects argument of type 'unsigned int', but argument 10 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                                           ~~^
+      |                                             |
+      |                                             unsigned int
+      |                                           %8lu
+......
+   33 |         psramFree
+      |         ~~~~~~~~~                            
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/menu_items/FileMenu.cpp: In lambda function:
+src/core/menu_items/FileMenu.cpp:17:35: warning: implicit capture of 'this' via '[=]' is deprecated in C++20 [-Wdeprecated]
+   17 |     options.push_back({"Connect", [=]() {
+      |                                   ^
+src/core/menu_items/FileMenu.cpp:17:35: note: add explicit 'this' or '*this' capture
+src/core/menu_items/FileMenu.cpp:23:27: warning: implicit capture of 'this' via '[=]' is deprecated in C++20 [-Wdeprecated]
+   23 |             {"Back",      [=]() { optionsMenu(); }                   }
+      |                           ^
+src/core/menu_items/FileMenu.cpp:23:27: note: add explicit 'this' or '*this' capture
+src/core/mykeyboard.cpp: In instantiation of 'String generalKeyboard(String, int, String, char (*)[KeyboardWidth][2], bool) [with int KeyboardHeight = 4; int KeyboardWidth = 12]':
+src/core/mykeyboard.cpp:1408:78:   required from here
+ 1408 |         return generalKeyboard<azerty_keyboard_height, azerty_keyboard_width>(
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1409 |             current_text, max_size, textbox_title, azerty_keyset, mask_input
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+ 1410 |         );
+      |         ~                                                                     
+src/core/mykeyboard.cpp:569:13: warning: variable 'longNextPress' set but not used [-Wunused-but-set-variable]
+  569 |     uint8_t longNextPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/mykeyboard.cpp:570:13: warning: variable 'longPrevPress' set but not used [-Wunused-but-set-variable]
+  570 |     uint8_t longPrevPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/mykeyboard.cpp: In instantiation of 'String generalKeyboard(String, int, String, char (*)[KeyboardWidth][2], bool) [with int KeyboardHeight = 4; int KeyboardWidth = 4]':
+src/core/mykeyboard.cpp:1426:68:   required from here
+ 1426 |     return generalKeyboard<hex_keyboard_height, hex_keyboard_width>(
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1427 |         current_text, max_size, textbox_title, hex_keyset, mask_input
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1428 |     );
+      |     ~                                                               
+src/core/mykeyboard.cpp:569:13: warning: variable 'longNextPress' set but not used [-Wunused-but-set-variable]
+  569 |     uint8_t longNextPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/mykeyboard.cpp:570:13: warning: variable 'longPrevPress' set but not used [-Wunused-but-set-variable]
+  570 |     uint8_t longPrevPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/mykeyboard.cpp: In instantiation of 'String generalKeyboard(String, int, String, char (*)[KeyboardWidth][2], bool) [with int KeyboardHeight = 3; int KeyboardWidth = 4]':
+src/core/mykeyboard.cpp:1434:74:   required from here
+ 1434 |     return generalKeyboard<numpad_keyboard_height, numpad_keyboard_width>(
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1435 |         current_text, max_size, textbox_title, numpad_keyset, mask_input
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+ 1436 |     );
+      |     ~                                                                     
+src/core/mykeyboard.cpp:569:13: warning: variable 'longNextPress' set but not used [-Wunused-but-set-variable]
+  569 |     uint8_t longNextPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/mykeyboard.cpp:570:13: warning: variable 'longPrevPress' set but not used [-Wunused-but-set-variable]
+  570 |     uint8_t longPrevPress = 0;
+      |             ^~~~~~~~~~~~~
+src/core/serial_commands/storage_commands.cpp: In function 'uint32_t ymodemReceiveCallback(cmd*)':
+src/core/serial_commands/storage_commands.cpp:269:10: warning: variable 'headerReceived' set but not used [-Wunused-but-set-variable]
+  269 |     bool headerReceived = false;
+      |          ^~~~~~~~~~~~~~
+src/modules/badusb_ble/ducky_typer.cpp:525:1: warning: 'void sendQueuedKeys(HIDInterface*, bool&, const std::vector<QueuedHIDKey>&)' defined but not used [-Wunused-function]
+  525 | sendQueuedKeys(HIDInterface *hid, bool &queueRecording, const std::vector<QueuedHIDKey> &queuedKeys) {
+      | ^~~~~~~~~~~~~~
+src/modules/badusb_ble/ducky_typer.cpp:508:1: warning: 'void keyboardSectionAction(HIDInterface*, bool&, std::vector<QueuedHIDKey>&)' defined but not used [-Wunused-function]
+  508 | keyboardSectionAction(HIDInterface *hid, bool &queueRecording, std::vector<QueuedHIDKey> &queuedKeys) {
+      | ^~~~~~~~~~~~~~~~~~~~~
+src/modules/badusb_ble/ducky_typer.cpp:480:13: warning: 'void openKeySection(HIDInterface*, const char*, const KeyboardMenuKey*, size_t, bool&, std::vector<QueuedHIDKey>&)' defined but not used [-Wunused-function]
+  480 | static void openKeySection(
+      |             ^~~~~~~~~~~~~~
+src/modules/ble_api/services/BLESerialService.cpp: In member function 'virtual void BLESerialService::setup(NimBLEServer*)':
+src/modules/ble_api/services/BLESerialService.cpp:29:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+   29 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/ble/ble_common.h:6,
+                 from src/modules/ble_api/services/BLESerialService.cpp:3:
+.pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/ble_api/services/BatteryService.cpp: In member function 'virtual void BatteryService::setup(NimBLEServer*)':
+src/modules/ble_api/services/BatteryService.cpp:35:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+   35 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/ble_api/services/BatteryService.cpp:4:
+.pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+In file included from src/modules/lora/LoRaRF.cpp:10:
+.pio/libdeps/m5stack-cardputer/RadioLib/src/RadioLib.h:67:4: warning: #warning "Use of USB CDC for debug output is not recommended (might stop on first sleep). Use hardware UART instead." [-Wcpp]
+   67 |   #warning "Use of USB CDC for debug output is not recommended (might stop on first sleep). Use hardware UART instead."
+      |    ^~~~~~~
+src/modules/reverseShell/reverseShell.cpp: In lambda function:
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PING' not handled in switch [-Wswitch]
+   22 |         switch (type) {
+      |                ^
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PONG' not handled in switch [-Wswitch]
+src/modules/rfid/PN532.cpp: In member function 'virtual int PN532::emulate()':
+src/modules/rfid/PN532.cpp:696:18: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  696 |                 );
+      |                  ^
+src/modules/rfid/ST25R3916.cpp: In member function 'int ST25R3916::_handleListenLoop(uint32_t)':
+src/modules/rfid/ST25R3916.cpp:1204:30: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1204 |                     if (addr < 256) {
+      |                         ~~~~~^~~~~
+src/modules/rfid/ST25R3916.cpp: At global scope:
+src/modules/rfid/ST25R3916.cpp:25:20: warning: 'const char* _stateStr(rfalNfcState)' defined but not used [-Wunused-function]
+   25 | static const char *_stateStr(rfalNfcState st) {
+      |                    ^~~~~~~~~
+src/modules/rfid/PN532KillerTools.cpp: In member function 'bool PN532KillerTools::enableBleDataTransfer()':
+src/modules/rfid/PN532KillerTools.cpp:770:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+  770 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/rfid/PN532KillerTools.cpp:14:
+.pio/libdeps/m5stack-cardputer/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/wifi/channel_analyzer.cpp: In function 'void ca_rx_cb(void*, wifi_promiscuous_pkt_type_t)':
+src/modules/wifi/channel_analyzer.cpp:32:5: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   32 |     ca_pkts++;
+      |     ^~~~~~~
+src/modules/wifi/jam_detect.cpp: In function 'void jd_rx_cb(void*, wifi_promiscuous_pkt_type_t)':
+src/modules/wifi/jam_detect.cpp:36:5: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   36 |     jd_total++;
+      |     ^~~~~~~~
+src/modules/wifi/jam_detect.cpp:42:58: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   42 |     if (ftype == 0x00 && (fsub == 0x0C || fsub == 0x0A)) jd_deauth++;
+      |                                                          ^~~~~~~~~
+src/modules/wifi/karma_attack.cpp: In function 'void karma_setup()':
+src/modules/wifi/karma_attack.cpp:2659:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2659 |     attackConfig.highTierDuration = 180000;
+      |                                     ^~~~~~
+src/modules/wifi/karma_attack.cpp:2665:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2665 |     attackConfig.extendedDuration = 180000;
+      |                                     ^~~~~~
+src/modules/wifi/wifi_recover.cpp:611:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  611 | hmac_sha1_20w(const HmacSha1Pre &pre, const uint32_t data[5], uint32_t out[5]) {
+      | ^~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:478:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  478 | sha1_transform_20w(uint32_t state[5], const uint32_t words[5]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:444:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  444 | sha1_transform_20b(uint32_t state[5], const uint8_t data[20]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'void hmac_sha1_20(const HmacSha1Pre&, const uint8_t*, uint8_t*)' defined but not used [-Wunused-function]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: cannot find -lnet80211: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+*** [.pio\build\m5stack-cardputer\firmware.elf] Error 1
+========================= [FAILED] Took 333.13 seconds =========================
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-rn1rpen7'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-36kz2os1'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-lwmey8z1'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-7luvck2g'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-ra5z8uj3'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-m464aogw'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-x_8_iu88'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-3opabsjg'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-62a7lr3b'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-z55kw6q6'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-gej1_n_c'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-55_hgiww'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-sqsubrno'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-te4k88y2'...
+Note: switching to '169b5ea7723bf43d7be9631a14f9c2a1ed8c69e1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-3a7r0uhb'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-dqd_qexg'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-q8z8zxl6'...
+Cloning into 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\cache\tmp\pkg-installing-gv0er1ss'...
+'pio' is not recognized as an internal or external command,
+operable program or batch file.
+*** Error 1
+.pio/libdeps/m5stack-cplus2/IRremoteESP8266/src/IRrecv.cpp: In function 'void gpio_intr()':
+.pio/libdeps/m5stack-cplus2/IRremoteESP8266/src/IRrecv.cpp:222:10: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+  222 |   params.rawlen++;
+      |   ~~~~~~~^~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:13:38: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   13 | #define LIBSSH_ESP32_COMPAT_USERNAME "root"
+      |                                      ^~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:45:5: note: in expansion of macro 'LIBSSH_ESP32_COMPAT_USERNAME'
+   45 |   { LIBSSH_ESP32_COMPAT_USERNAME, /* password: */"", LIBSSH_ESP32_COMPAT_UID,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:45:50: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   45 |   { LIBSSH_ESP32_COMPAT_USERNAME, /* password: */"", LIBSSH_ESP32_COMPAT_UID,
+      |                                                  ^~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:46:44: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 |     LIBSSH_ESP32_COMPAT_GID, /* comment: */"", /* gecos: */"",
+      |                                            ^~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:46:60: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 |     LIBSSH_ESP32_COMPAT_GID, /* comment: */"", /* gecos: */"",
+      |                                                            ^~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:22:37: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   22 | #define LIBSSH_ESP32_COMPAT_HOMEDIR "/spiffs"
+      |                                     ^~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:47:5: note: in expansion of macro 'LIBSSH_ESP32_COMPAT_HOMEDIR'
+   47 |     LIBSSH_ESP32_COMPAT_HOMEDIR, /* shell: */"" };
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh_esp32_compat.c:47:46: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   47 |     LIBSSH_ESP32_COMPAT_HOMEDIR, /* shell: */"" };
+      |                                              ^~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c: In function 'ssh_scp_new':
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:110:5: warning: 'ssh_scp_free' is deprecated [-Wdeprecated-declarations]
+  110 |     ssh_scp_free(scp);
+      |     ^~~~~~~~~~~~
+In file included from .pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh/priv.h:199,
+                 from .pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:30:
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/libssh/libssh.h:592:32: note: declared here
+  592 | SSH_DEPRECATED LIBSSH_API void ssh_scp_free(ssh_scp scp);
+      |                                ^~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c: In function 'ssh_scp_free':
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:303:9: warning: 'ssh_scp_close' is deprecated [-Wdeprecated-declarations]
+  303 |         ssh_scp_close(scp);
+      |         ^~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:249:5: note: declared here
+  249 | int ssh_scp_close(ssh_scp scp)
+      |     ^~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c: In function 'ssh_scp_push_file':
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:577:5: warning: 'ssh_scp_push_file64' is deprecated [-Wdeprecated-declarations]
+  577 |     return ssh_scp_push_file64(scp, filename, (uint64_t) size, mode);
+      |     ^~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:472:5: note: declared here
+  472 | int ssh_scp_push_file64(ssh_scp scp, const char *filename, uint64_t size,
+      |     ^~~~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c: In function 'ssh_scp_read':
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:1039:9: warning: 'ssh_scp_accept_request' is deprecated [-Wdeprecated-declarations]
+ 1039 |         rc = ssh_scp_accept_request(scp);
+      |         ^~
+.pio/libdeps/m5stack-cplus2/LibSSH-ESP32/src/scp.c:985:5: note: declared here
+  985 | int ssh_scp_accept_request(ssh_scp scp)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp: In member function 'bool ChameleonUltra::cmdEnableSlot(uint8_t, TagSenseType)':
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:446:27: warning: narrowing conversion of '(((int)slot) - 1)' from 'int' to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  446 |     uint8_t cmd[3] = {slot-1, freq, 0x01};
+      |                       ~~~~^~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp: In member function 'bool ChameleonUltra::cmdChangeActiveSlot(uint8_t)':
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:457:27: warning: narrowing conversion of '(((int)slot) - 1)' from 'int' to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  457 |     uint8_t cmd[1] = {slot-1};
+      |                       ~~~~^~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp: In member function 'bool ChameleonUltra::cmdChangeSlotType(uint8_t, TagType)':
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:468:27: warning: narrowing conversion of '(((int)slot) - 1)' from 'int' to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  468 |     uint8_t cmd[3] = {slot-1, (tagType >> 8) & 0xFF, tagType & 0xFF};
+      |                       ~~~~^~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:468:46: warning: narrowing conversion of '((((int)tagType) >> 8) & 255)' from 'int' to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  468 |     uint8_t cmd[3] = {slot-1, (tagType >> 8) & 0xFF, tagType & 0xFF};
+      |                               ~~~~~~~~~~~~~~~^~~~~~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:468:62: warning: narrowing conversion of '(((int)tagType) & 255)' from 'int' to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  468 |     uint8_t cmd[3] = {slot-1, (tagType >> 8) & 0xFF, tagType & 0xFF};
+      |                                                      ~~~~~~~~^~~~~~
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp: In member function 'bool ChameleonUltra::cmdMfEconfig(byte*, size_t, byte*, byte)':
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:708:32: warning: narrowing conversion of 'length' from 'size_t' {aka 'unsigned int'} to 'uint8_t' {aka 'unsigned char'} [-Wnarrowing]
+  708 |     uint8_t cmd[length + 5] = {length};
+      |                                ^~~~~~
+In file included from .pio/libdeps/m5stack-cplus2/ESP8266Audio/src/AudioOutputPDM.h:25,
+                 from .pio/libdeps/m5stack-cplus2/ESP8266Audio/src/AudioOutputPDM.cpp:22:
+.pio/libdeps/m5stack-cplus2/ESP8266Audio/src/AudioOutputPDM.cpp: In member function 'virtual bool AudioOutputPDM::begin()':
+.pio/libdeps/m5stack-cplus2/ESP8266Audio/src/AudioOutputPDM.cpp:64:63: warning: narrowing conversion of '((AudioOutputPDM*)this)->AudioOutputPDM::AdjustI2SRate(((int)((AudioOutputPDM*)this)->AudioOutputPDM::AudioOutputI2S.AudioOutputI2S::AudioOutput.AudioOutput::hertz))' from 'int' to 'uint32_t' {aka 'long unsigned int'} [-Wnarrowing]
+   64 |         .clk_cfg = I2S_PDM_TX_CLK_DEFAULT_CONFIG(AdjustI2SRate(hertz)),
+      |                                                  ~~~~~~~~~~~~~^~~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32/include/esp_driver_i2s/include/driver/i2s_pdm.h:399:23: note: in definition of macro 'I2S_PDM_TX_CLK_DEFAULT_CONFIG'
+  399 |     .sample_rate_hz = rate, \
+      |                       ^~~~
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c: In function 'js_vprintf':
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:746:21: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  746 |                 buf = "null";
+      |                     ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:790:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  790 |                         buf = "null";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:793:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  793 |                         buf = "undefined";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:796:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  796 |                         buf = "uninitialized";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:799:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  799 |                         buf = JS_VALUE_GET_SPECIAL_VALUE(val) ? "true" : "false";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:805:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  805 |                         buf = "[tag]";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/mquickjs/mquickjs.c:820:29: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  820 |                         buf = "[mtag]";
+      |                             ^
+.pio/libdeps/m5stack-cplus2/ESP32-PSRamFS/src/pfs.c:36:4: warning: #warning "Will use PSRAM or heap" [-Wcpp]
+   36 |   #warning "Will use PSRAM or heap"
+      |    ^~~~~~~
+.pio/libdeps/m5stack-cplus2/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+  599 | #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+      |                      ^
+.pio/libdeps/m5stack-cplus2/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+  600 | #  undef interrupts() portEXIT_CRITICAL(&mux);}
+      |                    ^
+.pio/libdeps/m5stack-cplus2/FastLED/src/platforms/esp/32/rmt_5/idf5_rmt.cpp:8:2: warning: #warning "FASTLED_RMT_BUILTIN_DRIVER is not supported in RMT5 and will be ignored." [-Wcpp]
+    8 | #warning "FASTLED_RMT_BUILTIN_DRIVER is not supported in RMT5 and will be ignored."
+      |  ^~~~~~~
+lib/Bad_Usb_Lib/BleKeyboard.cpp: In member function 'void BleKeyboard::begin(const uint8_t*, uint16_t)':
+lib/Bad_Usb_Lib/BleKeyboard.cpp:181:23: warning: 'void NimBLEHIDDevice::startServices()' is deprecated: Services are now started by the server when start() is called, this function is no longer needed and will be removed in a future release. [-Wdeprecated-declarations]
+  181 |     hid->startServices();
+      |     ~~~~~~~~~~~~~~~~~~^~
+In file included from lib/Bad_Usb_Lib/BleKeyboard.h:10,
+                 from lib/Bad_Usb_Lib/BleKeyboard.cpp:1:
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEHIDDevice.h:52:27: note: declared here
+   52 |     void                  startServices() __attribute__((deprecated("Services are now started by the server when start() is called, "
+      |                           ^~~~~~~~~~~~~
+In file included from src/core/display.cpp:1868:
+.pio/libdeps/m5stack-cplus2/PNGdec/src/PNGdec.h:217:9: warning: "INTELSHORT" redefined
+  217 | #define INTELSHORT(p) ((*p) + (*(p+1)<<8))
+      |         ^~~~~~~~~~
+In file included from src/core/display.h:33,
+                 from src/core/display.cpp:1:
+.pio/libdeps/m5stack-cplus2/AnimatedGIF/src/AnimatedGIF.h:289:9: note: this is the location of the previous definition
+  289 | #define INTELSHORT(p) (*(uint16_t *)p)
+      |         ^~~~~~~~~~
+.pio/libdeps/m5stack-cplus2/PNGdec/src/PNGdec.h:218:9: warning: "INTELLONG" redefined
+  218 | #define INTELLONG(p) ((*p) + (*(p+1)<<8) + (*(p+2)<<16) + (*(p+3)<<24))
+      |         ^~~~~~~~~
+.pio/libdeps/m5stack-cplus2/AnimatedGIF/src/AnimatedGIF.h:290:9: note: this is the location of the previous definition
+  290 | #define INTELLONG(p) (*(uint32_t *)p)
+      |         ^~~~~~~~~
+src/core/config.cpp: In member function 'void BruceConfig::validateBadUSBBLEKeyDelay()':
+src/core/config.cpp:802:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  802 |     if (badUSBBLEKeyDelay < 0) badUSBBLEKeyDelay = 0;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+src/core/menu_items/FileMenu.cpp: In lambda function:
+src/core/menu_items/FileMenu.cpp:17:35: warning: implicit capture of 'this' via '[=]' is deprecated in C++20 [-Wdeprecated]
+   17 |     options.push_back({"Connect", [=]() {
+      |                                   ^
+src/core/menu_items/FileMenu.cpp:17:35: note: add explicit 'this' or '*this' capture
+src/core/menu_items/FileMenu.cpp:23:27: warning: implicit capture of 'this' via '[=]' is deprecated in C++20 [-Wdeprecated]
+   23 |             {"Back",      [=]() { optionsMenu(); }                   }
+      |                           ^
+src/core/menu_items/FileMenu.cpp:23:27: note: add explicit 'this' or '*this' capture
+src/core/ram_profile.cpp: In function 'void ramProfileLog(const char*)':
+src/core/ram_profile.cpp:24:54: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                    ~~^
+      |                                                      |
+      |                                                      unsigned int
+      |                                                    %7lu
+......
+   28 |         freeHeap,
+      |         ~~~~~~~~                                      
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:24:66: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                                ~~^
+      |                                                                  |
+      |                                                                  unsigned int
+      |                                                                %7lu
+......
+   29 |         minFreeEver,
+      |         ~~~~~~~~~~~                                               
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:24:86: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   24 |         "[RAMLOG] t=%6lums stage=%-20s | heap free=%7u minEver=%7u | internal free=%7u "
+      |                                                                                    ~~^
+      |                                                                                      |
+      |                                                                                      unsigned int
+      |                                                                                    %7lu
+......
+   30 |         internalFree,
+      |         ~~~~~~~~~~~~                                                                  
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:20: warning: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                  ~~^
+      |                    |
+      |                    unsigned int
+      |                  %7lu
+......
+   31 |         internalLargest,
+      |         ~~~~~~~~~~~~~~~
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:28: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                          ~~^
+      |                            |
+      |                            unsigned int
+      |                          %7lu
+......
+   32 |         dmaLargest,
+      |         ~~~~~~~~~~          
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/ram_profile.cpp:25:45: warning: format '%u' expects argument of type 'unsigned int', but argument 10 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |         "largest=%7u dma=%7u | psram free=%8u\n",
+      |                                           ~~^
+      |                                             |
+      |                                             unsigned int
+      |                                           %8lu
+......
+   33 |         psramFree
+      |         ~~~~~~~~~                            
+      |         |
+      |         uint32_t {aka long unsigned int}
+src/core/serial_commands/storage_commands.cpp: In function 'uint32_t ymodemReceiveCallback(cmd*)':
+src/core/serial_commands/storage_commands.cpp:269:10: warning: variable 'headerReceived' set but not used [-Wunused-but-set-variable]
+  269 |     bool headerReceived = false;
+      |          ^~~~~~~~~~~~~~
+src/modules/ble_api/services/BLESerialService.cpp: In member function 'virtual void BLESerialService::setup(NimBLEServer*)':
+src/modules/ble_api/services/BLESerialService.cpp:29:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+   29 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/ble/ble_common.h:6,
+                 from src/modules/ble_api/services/BLESerialService.cpp:3:
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/ble_api/services/BatteryService.cpp: In member function 'virtual void BatteryService::setup(NimBLEServer*)':
+src/modules/ble_api/services/BatteryService.cpp:35:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+   35 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/ble_api/services/BatteryService.cpp:4:
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/reverseShell/reverseShell.cpp: In lambda function:
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PING' not handled in switch [-Wswitch]
+   22 |         switch (type) {
+      |                ^
+src/modules/reverseShell/reverseShell.cpp:22:16: warning: enumeration value 'WS_EVT_PONG' not handled in switch [-Wswitch]
+src/modules/rfid/PN532.cpp: In member function 'virtual int PN532::emulate()':
+src/modules/rfid/PN532.cpp:696:18: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  696 |                 );
+      |                  ^
+src/modules/rfid/PN532KillerTools.cpp: In member function 'bool PN532KillerTools::enableBleDataTransfer()':
+src/modules/rfid/PN532KillerTools.cpp:770:20: warning: 'bool NimBLEService::start()' is deprecated: NimBLEService::start() has no effect. Services are started when the server is started. [-Wdeprecated-declarations]
+  770 |     pService->start();
+      |     ~~~~~~~~~~~~~~~^~
+In file included from .pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEDevice.h:299,
+                 from src/modules/rfid/PN532KillerTools.cpp:14:
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEService.h:51:10: note: declared here
+   51 |     bool start() { return true; }
+      |          ^~~~~
+src/modules/rfid/ST25R3916.cpp: In member function 'int ST25R3916::_handleListenLoop(uint32_t)':
+src/modules/rfid/ST25R3916.cpp:1204:30: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1204 |                     if (addr < 256) {
+      |                         ~~~~~^~~~~
+src/modules/rfid/ST25R3916.cpp: At global scope:
+src/modules/rfid/ST25R3916.cpp:25:20: warning: 'const char* _stateStr(rfalNfcState)' defined but not used [-Wunused-function]
+   25 | static const char *_stateStr(rfalNfcState st) {
+      |                    ^~~~~~~~~
+src/modules/wifi/channel_analyzer.cpp: In function 'void ca_rx_cb(void*, wifi_promiscuous_pkt_type_t)':
+src/modules/wifi/channel_analyzer.cpp:32:5: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   32 |     ca_pkts++;
+      |     ^~~~~~~
+src/modules/wifi/jam_detect.cpp: In function 'void jd_rx_cb(void*, wifi_promiscuous_pkt_type_t)':
+src/modules/wifi/jam_detect.cpp:36:5: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   36 |     jd_total++;
+      |     ^~~~~~~~
+src/modules/wifi/jam_detect.cpp:42:58: warning: '++' expression of 'volatile'-qualified type is deprecated [-Wvolatile]
+   42 |     if (ftype == 0x00 && (fsub == 0x0C || fsub == 0x0A)) jd_deauth++;
+      |                                                          ^~~~~~~~~
+src/modules/wifi/clients.cpp:443:6: warning: 'void {anonymous}::clearTerminalPendingState()' defined but not used [-Wunused-function]
+  443 | void clearTerminalPendingState() {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/modules/wifi/clients.cpp:439:6: warning: 'void {anonymous}::setPendingEchoSuppression(const String&)' defined but not used [-Wunused-function]
+  439 | void setPendingEchoSuppression(const String &input) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/modules/wifi/clients.cpp:418:8: warning: 'String {anonymous}::getBufferedCommandInput()' defined but not used [-Wunused-function]
+  418 | String getBufferedCommandInput() {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:611:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  611 | hmac_sha1_20w(const HmacSha1Pre &pre, const uint32_t data[5], uint32_t out[5]) {
+      | ^~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:478:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  478 | sha1_transform_20w(uint32_t state[5], const uint32_t words[5]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:444:1: warning: 'always_inline' function might not be inlinable unless also declared 'inline' [-Wattributes]
+  444 | sha1_transform_20b(uint32_t state[5], const uint8_t data[20]) {
+      | ^~~~~~~~~~~~~~~~~~
+src/modules/wifi/wifi_recover.cpp:591:1: warning: 'void hmac_sha1_20(const HmacSha1Pre&, const uint8_t*, uint8_t*)' defined but not used [-Wunused-function]
+  591 | hmac_sha1_20(const HmacSha1Pre &pre, const uint8_t data[20], uint8_t out[20]) {
+      | ^~~~~~~~~~~~
+src/modules/wifi/karma_attack.cpp: In function 'void karma_setup()':
+src/modules/wifi/karma_attack.cpp:2659:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2659 |     attackConfig.highTierDuration = 180000;
+      |                                     ^~~~~~
+src/modules/wifi/karma_attack.cpp:2665:37: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '180000' to '48928' [-Woverflow]
+ 2665 |     attackConfig.extendedDuration = 180000;
+      |                                     ^~~~~~
+C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/.platformio/packages/framework-arduinoespressif32-libs/esp32/lib\libnet80211.a(ieee80211_output.o): in function `ieee80211_raw_frame_sanity_check':
+(.text.ieee80211_raw_frame_sanity_check+0x5c): multiple definition of `ieee80211_raw_frame_sanity_check'; .pio/build/m5stack-cplus2/src/modules/wifi/wifi_atks.cpp.o (symbol from plugin):(.text+0x0): first defined here
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_gap.c:9451:16: warning: type of 'is_ble_hs_resolv_enabled' does not match original declaration [-Wlto-type-mismatch]
+ 9451 |     extern int is_ble_hs_resolv_enabled(void);
+      |                ^
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: return value type mismatch
+  331 | is_ble_hs_resolv_enabled(void)
+      | ^
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: type 'uint8_t' should match type 'int'
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: 'is_ble_hs_resolv_enabled' was previously declared here
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:32:7: warning: virtual table of type 'struct scanCallbacks' violates one definition rule [-Wodr]
+   32 | class scanCallbacks : public NimBLEAdvertisedDeviceCallbacks {
+      |       ^
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:32:7: note: the conflicting type defined in another translation unit
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEScan.h:220:18: note: virtual method 'onResult'
+  220 |     virtual void onResult(const NimBLEAdvertisedDevice* advertisedDevice);
+      |                  ^
+.pio/libdeps/m5stack-cplus2/ESP PN32BLE/src/pn532_ble.cpp:29:10: note: ought to match virtual method 'onResult' but does not
+   29 |     void onResult(const NimBLEAdvertisedDevice *advertisedDevice)
+      |          ^
+lto-wrapper.exe: warning: using serial compilation of 57 LTRANS jobs
+lto-wrapper.exe: note: see the '-flto' option documentation for more information
+collect2.exe: error: ld returned 1 exit status
+*** [.pio\build\m5stack-cplus2\firmware.elf] Error 1
+========================= [FAILED] Took 370.04 seconds =========================
+Environment        Status    Duration
+-----------------  --------  ------------
+m5stack-cardputer  FAILED    00:05:33.129
+m5stack-cplus2     FAILED    00:06:10.044
+==================== 2 failed, 0 succeeded in 00:11:43.173 ====================

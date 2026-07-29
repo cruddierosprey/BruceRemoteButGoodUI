@@ -1,0 +1,1383 @@
+Processing m5stack-cplus2 (board: m5stack-cplus2; platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.39/platform-espressif32.zip; framework: arduino)
+--------------------------------------------------------------------------------
+Library Manager: Installing h2zero/NimBLE-Arduino
+Library Manager: Installing h2zero/NimBLE-Arduino
+Library Manager: Installing h2zero/NimBLE-Arduino
+Library Manager: Installing whywilson/ESP-PN532-UART
+Verbose mode can be enabled via `-v, --verbose` option
+"C:\Users\Adam\.platformio\packages\toolchain-xtensa-esp-elf\bin\xtensa-esp32-elf-objcopy" --weaken-symbol=ieee80211_raw_frame_sanity_check "C:\Users\Adam\.platformio\packages\framework-arduinoespressif32-libs\esp32\lib\libnet80211.a" "C:\Users\Adam\.platformio\packages\framework-arduinoespressif32-libs\esp32\lib\libnet80211.a.patched"
+<lambda>([], [])
+[GZIP & EMBED INTO HEADER] - Nothing to process.
+ae56fe5480611f036a40c7264b9e5c94478eab62cadc274a2dcabeed691b9488 ae56fe5480611f036a40c7264b9e5c94478eab62cadc274a2dcabeed691b9488
+Patching library conflicts with ESP32 core...
+Already patched: .pio/libdeps\m5stack-cardputer\ESP8266SAM\src\render.c
+Already patched: .pio/libdeps\m5stack-cplus2\ESP8266SAM\src\render.c
+Already patched: .pio/libdeps\m5stack-cardputer\ESP8266SAM\src\render.c
+Already patched: .pio/libdeps\m5stack-cplus2\ESP8266SAM\src\render.c
+Already patched: .pio/libdeps\m5stack-cardputer\JPEGDecoder\src\picojpeg.c
+Already patched: .pio/libdeps\m5stack-cplus2\JPEGDecoder\src\picojpeg.c
+Already patched: .pio/libdeps\m5stack-cardputer\JPEGDecoder\src\picojpeg.c
+Already patched: .pio/libdeps\m5stack-cplus2\JPEGDecoder\src\picojpeg.c
+Already patched: .pio/libdeps\m5stack-cardputer\ESP Amiibolink\src\amiibolink.h
+Already patched: .pio/libdeps\m5stack-cplus2\ESP Amiibolink\src\amiibolink.h
+Already patched: .pio/libdeps\m5stack-cardputer\ESP Chameleon Ultra\src\chameleonUltra.h
+Already patched: .pio/libdeps\m5stack-cplus2\ESP Chameleon Ultra\src\chameleonUltra.h
+Already patched: .pio/libdeps\m5stack-cardputer\ESP PN32BLE\src\pn532_ble.h
+Already patched: .pio/libdeps\m5stack-cplus2\ESP PN32BLE\src\pn532_ble.h
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.h
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.h
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\st25r3916_interrupt.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\st25r3916_interrupt.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\st25r3916_interrupt.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\st25r3916_interrupt.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\ST25R3916-fork\src\rfal_rfst25r3916.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\NFC-RFAL-fork\src\rfal_nfca.h
+Already patched: .pio/libdeps\m5stack-cplus2\NFC-RFAL-fork\src\rfal_nfca.h
+Already patched: .pio/libdeps\m5stack-cardputer\NFC-RFAL-fork\src\rfal_nfca.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\NFC-RFAL-fork\src\rfal_nfca.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\NFC-RFAL-fork\src\rfal_nfca.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\NFC-RFAL-fork\src\rfal_nfca.cpp
+Already patched: .pio/libdeps\m5stack-cardputer\NFC-RFAL-fork\src\rfal_nfca.cpp
+Already patched: .pio/libdeps\m5stack-cplus2\NFC-RFAL-fork\src\rfal_nfca.cpp
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/m5stack-cplus2.html
+PLATFORM: Espressif 32 (55.3.39) > M5Stick CPlus2
+HARDWARE: ESP32 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, esp-prog-2, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.9 
+ - framework-arduinoespressif32-libs @ 5.5.4+sha.735507283d 
+ - tool-esp-rom-elfs @ 2024.10.11 
+ - tool-esptoolpy @ 5.3.0 
+ - tool-xtensa-esp-elf-gdb @ 17.1.0+20260402 
+ - toolchain-xtensa-esp-elf @ 14.2.0+20260121
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 89 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- WireGuard-ESP32 @ 0.1.5+sha.4e22d2e
+|-- IRremoteESP8266 @ 2.8.6+sha.22cd38c
+|-- Time @ 1.6.1
+|-- LibSSH-ESP32 @ 5.9.0
+|-- Adafruit BusIO @ 1.17.2-bruce.1+sha.27230c1
+|-- Adafruit PN532 @ 1.3.3-bruce.1+sha.e91d695
+|-- BER-TLV @ 0.0.0+20260724125929.sha.bd61b70
+|-- RFID_MFRC522v2 @ 2.0.6+sha.a6977df
+|-- ESP Chameleon Ultra @ 0.0.2+sha.f66f354
+|-- ESP Amiibolink @ 0.0.2+sha.fc26412
+|-- SimpleCLI @ 1.1.4+sha.b23d377
+|-- ESP PN32BLE @ 0.0.2+sha.542f121
+|-- ESP PN532 UART @ 0.0.2+sha.879e586
+|-- ESP PN532Killer @ 0.0.7+sha.71bf110
+|-- NTPClient @ 3.2.1
+|-- ESP32Time @ 2.0.6
+|-- FFat @ 3.3.9
+|-- ArduinoJson @ 7.4.3
+|-- ESP8266Audio @ 2.4.1
+|-- ESP8266SAM @ 1.1.0
+|-- TinyGPSPlus @ 1.1.0
+|-- FFT @ 0.0.1
+|-- NimBLE-Arduino @ 2.5.0
+|-- RF24 @ 1.4.11
+|-- Adafruit Si4713 Library @ 1.2.3
+|-- JPEGDecoder @ 2.0.0
+|-- SmartRC-CC1101-Driver-Lib @ 2.5.7+sha.7bba521
+|-- mquickjs @ 0.0.6+sha.169b5ea
+|-- OneWire @ 2.3.8+sha.42e045e
+|-- ESP32-PSRamFS @ 1.0.6+sha.5ace2e6
+|-- AnimatedGIF @ 2.2.3
+|-- PNGdec @ 1.1.6
+|-- ESPAsyncWebServer @ 3.11.2
+|-- FastLED @ 3.10.3
+|-- RadioLib @ 7.7.1
+|-- ST25R3916-fork @ 1.1.0+sha.0c8e00f
+|-- NFC-RFAL-fork @ 1.0.1+sha.7bde458
+|-- WiFi @ 3.3.9
+|-- BruceHAL @ 7.3.1
+|-- HTTPClient @ 3.3.9
+|-- LittleFS @ 3.3.9
+|-- Preferences @ 3.3.9
+|-- Wire @ 3.3.9
+|-- Ethernet @ 3.3.9
+|-- Networking @ 3.3.9
+|-- SPI @ 3.3.9
+|-- FS @ 3.3.9
+|-- Bad_Usb_Lib
+|-- TFT_eSPI QRcode @ 1.0.0
+|-- AsyncTCP @ 3.5.0
+|-- DNSServer @ 3.3.9
+|-- RTC
+|-- utility
+|-- ESPmDNS @ 3.3.9
+|-- PN532_SRIX
+|-- NetworkClientSecure @ 3.3.9
+|-- SPIFFS @ 3.3.9
+Building in release mode
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduinoVariant\variant.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\WireGuard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto\refc\blake2s.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto\refc\chacha20.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto\refc\chacha20poly1305.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto\refc\poly1305-donna.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\crypto\refc\x25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\wireguard-platform.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\wireguard.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib240\WireGuard-ESP32\wireguardif.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRac.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRrecv.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRsend.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRtext.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRtimer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\IRutils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Airton.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Airwell.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Aiwa.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Amcor.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Argo.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Arris.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_BluestarHeavy.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Bosch.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Bose.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Carrier.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_ClimaButler.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Coolix.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Corona.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Daikin.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Delonghi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Denon.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Dish.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Doshisha.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Ecoclim.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Electra.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_EliteScreens.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Epson.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Fujitsu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_GICable.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_GlobalCache.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Goodweather.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Gorenje.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Gree.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Haier.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Hitachi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Inax.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_JVC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Kelon.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Kelvinator.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_LG.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Lasertag.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Lego.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Lutron.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_MWM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Magiquest.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Metz.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Midea.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_MilesTag2.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Mirage.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Mitsubishi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_MitsubishiHeavy.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Multibrackets.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_NEC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Neoclima.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Nikai.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Panasonic.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Pioneer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Pronto.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_RC5_RC6.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_RCMM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Rhoss.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Samsung.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Sanyo.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Sharp.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Sherwood.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Sony.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Symphony.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Tcl.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Technibel.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Teco.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Teknopoint.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Toshiba.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Toto.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Transcold.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Trotec.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Truma.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Vestel.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Voltas.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Whirlpool.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Whynter.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Wowwee.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Xmp.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_York.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libf39\IRremoteESP8266\ir_Zepeal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libe07\Time\DateStrings.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libe07\Time\Time.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\PNGdec.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\adler32.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\crc32.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\infback.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\inffast.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\inflate.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\inftrees.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\s3_simd_rgb565.S.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib577\PNGdec\zutil.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\agent.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\auth.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\base64.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\bignum.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\bind.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\bind_config.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\buffer.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\callbacks.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\channels.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\client.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\config.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\config_parser.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\connect.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\crypto_common.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\curve25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\dh-gex.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\dh.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\dh_key.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\ecdh.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\ecdh_mbedcrypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\error.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\bcrypt_pbkdf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\blowfish.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\curve25519_ref.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\ed25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\fe25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\ge25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\external\sc25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\getpass.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\getrandom_mbedcrypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\gzip.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\init.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\kdf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\kex.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\knownhosts.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\libmbedcrypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\libssh_esp32.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\libssh_esp32_compat.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\log.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\match.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\mbedcrypto_missing.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\md_mbedcrypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\messages.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\misc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\options.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\packet.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\packet_cb.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\packet_crypt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\pki.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\pki_container_openssh.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\pki_ed25519.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\pki_ed25519_common.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\pki_mbedcrypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\poll.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\scp.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\server.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\session.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\socket.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\string.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\threads.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\threads\mbedtls.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\threads\noop.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\token.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\ttyopts.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbbd\LibSSH-ESP32\wrapper.c.o' from cache
+Compiling .pio\build\m5stack-cplus2\lib81f\Wire\Wire.cpp.o
+Compiling .pio\build\m5stack-cplus2\libd7e\SPI\SPI.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib2b1\Adafruit BusIO\Adafruit_BusIO_Register.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b1\Adafruit BusIO\Adafruit_GenericDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b1\Adafruit BusIO\Adafruit_I2CDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b1\Adafruit BusIO\Adafruit_SPIDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib107\Adafruit PN532\Adafruit_PN532.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib639\BER-TLV\BerTlv.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib639\BER-TLV\tests.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libadb\RFID_MFRC522v2\MFRC522Debug.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libadb\RFID_MFRC522v2\MFRC522DriverI2C.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libadb\RFID_MFRC522v2\MFRC522DriverSPI.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libadb\RFID_MFRC522v2\MFRC522Hack.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libadb\RFID_MFRC522v2\MFRC522v2.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLE2904.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEAddress.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEAdvertisedDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEAdvertisementData.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEAdvertising.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEAttValue.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEBeacon.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLECharacteristic.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEClient.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEDescriptor.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEEddystoneTLM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEExtAdvertising.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEHIDDevice.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEL2CAPChannel.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEL2CAPServer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLERemoteCharacteristic.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLERemoteDescriptor.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLERemoteService.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLERemoteValueAttribute.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEScan.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEServer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEService.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEStream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEUUID.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\NimBLEUtils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\esp_port\esp-hci\src\esp_nimble_hci.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\esp_port\esp-hci\src\na_hci_driver.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\esp_port\esp-hci\src\na_hci_transport.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\esp_port\port\src\exp_nimble_mem.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\aes_decrypt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\aes_encrypt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\cbc_mode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ccm_mode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\cmac_mode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ctr_mode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ctr_prng.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ecc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ecc_dh.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ecc_dsa.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\ecc_platform_specific.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\hmac.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\hmac_prng.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\sha256.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\ext\tinycrypt\src\utils.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_adv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_conn.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_conn_hci.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_crypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_ctrl.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_dtm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_hci.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_hci_ev.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_hci_supp_cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_hci_vs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_iso.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_iso_big.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_isoal.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_pdu.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_rand.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_resolv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_rfmgmt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_scan.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_scan_aux.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_sched.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_sync.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_trace.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_utils.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\controller\src\ble_ll_whitelist.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf51\src\ble_hw.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf51\src\ble_phy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf5x\src\ble_hw.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf5x\src\ble_phy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf5x\src\ble_phy_trace.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf5x\src\nrf52\phy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\drivers\nrf5x\src\nrf53\phy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\access.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\adv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\adv_ext.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\adv_legacy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\aes-ccm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\app_keys.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\beacon.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\cdb.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\cfg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\cfg_cli.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\cfg_srv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\crypto.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\friend.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\glue.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\health_cli.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\health_srv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\heartbeat.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\light_model.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\lpn.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\mesh.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\model_cli.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\model_srv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\msg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\net.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\pb_adv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\pb_gatt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\pb_gatt_srv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\prov.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\prov_device.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\provisioner.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\proxy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\proxy_msg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\proxy_srv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\rpl.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\settings.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\shell.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\subnet.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\testing.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\mesh\src\transport.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\services\gap\src\ble_svc_gap.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\services\gatt\src\ble_svc_gatt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_aes_ccm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_att.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_att_clt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_att_cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_att_svr.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_dtm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_ead.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_eatt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_eddystone.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gap.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gattc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gattc_cache.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gattc_cache_conn.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gatts.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_gatts_lcl.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_adv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_atomic.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_cfg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_conn.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_flow.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_hci.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_hci_cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_hci_evt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_hci_util.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_id.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_log.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_mbuf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_misc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_mqueue.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_periodic_sync.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_pvcy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_resolv.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_shutdown.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_startup.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_hs_stop.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_ibeacon.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_l2cap.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_l2cap_coc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_l2cap_sig.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_l2cap_sig_cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_sm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_sm_alg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_sm_cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_sm_lgcy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_sm_sc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_store.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_store_util.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\src\ble_uuid.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\store\config\src\ble_store_config.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\store\config\src\ble_store_config_conf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\store\config\src\ble_store_nvs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\store\ram\src\ble_store_ram.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\host\util\src\addr.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\common\hci_h4\src\hci_h4.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\common\hci_ipc\src\hci_ipc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\esp_ipc\src\hci_esp_ipc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\esp_ipc_legacy\src\hci_esp_ipc_legacy.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\nrf5340\src\nrf5340_ble_hci.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\nimble\transport\src\transport.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\endian.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\hal_timer.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\mem.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\nimble_port.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\os_cputime.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\os_cputime_pwr2.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\os_mbuf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\os_mempool.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\nimble\src\os_msys_init.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\npl\freertos\src\nimble_port_freertos.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3c5\NimBLE-Arduino\nimble\porting\npl\freertos\src\npl_os_freertos.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib19b\ESP Chameleon Ultra\chameleonUltra.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib531\ESP Amiibolink\amiibolink.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\Argument.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\Command.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\CommandError.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\SimpleCLI.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\c\arg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\c\cmd.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\c\cmd_error.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\c\comparator.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib350\SimpleCLI\c\parser.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libad8\ESP PN32BLE\pn532_ble.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libcf9\ESP PN532 UART\PN532_UART.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libcf9\ESP PN532 UART\TagTechnology.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib82f\ESP PN532Killer\PN532Killer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib82f\ESP PN532Killer\PN532KillerTagTechnology.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib147\NTPClient\NTPClient.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbf1\ESP32Time\ESP32Time.cpp.o' from cache
+Compiling .pio\build\m5stack-cplus2\lib424\FS\FS.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib424\FS\vfs_api.cpp.o
+Compiling .pio\build\m5stack-cplus2\libf59\FFat\FFat.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib49a\SPIFFS\SPIFFS.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkClient.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkEvents.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkInterface.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkManager.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkServer.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2cd\Network\NetworkUdp.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib7bd\NetworkClientSecure\NetworkClientSecure.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib7bd\NetworkClientSecure\ssl_client.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib2ba\HTTPClient\HTTPClient.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib7e4\LittleFS\LittleFS.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib777\TFT_eSPI\TFT_eSPI.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\display\ardgfx.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\display\lovyan.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\display\m5gfx.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\display\tftespi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\io_expander\Adafruit_AW9523.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\io_expander\PCA9555.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\sd_card\SD.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\sd_card\SD_MMC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\sd_card\sd_diskio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib85b\HAL\sd_card\sd_diskio_crc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceBuffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceFS.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceFunction.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceHTTPStream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceICYStream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceID3.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourcePROGMEM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceSD.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceSPIRAMBuffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileSourceSTDIO.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioFileStream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorAAC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorFLAC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorMIDI.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorMOD.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorMP3.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorMP3a.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorOpus.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorRTTTL.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorTalkie.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioGeneratorWAV.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioLogger.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputBuffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputFilterBiquad.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputFilterDecimate.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputI2S.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputI2SNoDAC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputMixer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputPDM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputPWM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputSPDIF.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputSPIFFSWAV.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputSTDIO.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputSerialWAV.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\AudioOutputULP.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\driver\SinglePinI2SDriver.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\bitmath.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\bitreader.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\cpu.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\crc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\fixed.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\float.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\format.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\lpc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\md5.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\memory.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\stream_decoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libflac\window.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\aacdec.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\aactabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\bitstream.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\buffers.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\dct4.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\decelmnt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\dequant.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\fft.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\filefmt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\huffmanaac.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\hufftabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\imdct.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\noiseless.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\pns.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbr.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrfft.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrfreq.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrhfadj.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrhfgen.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrhuff.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrimdct.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrmath.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrqmf.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrside.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\sbrtabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\stproc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\tns.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-aac\trigtabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\bitstream.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\buffers.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\dct32.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\dequant.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\dqchan.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\huffman.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\hufftabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\imdct.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\mp3dec.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\mp3tabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\polyphase.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\scalfact.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\stproc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\subband.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libhelix-mp3\trigtabs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\bit.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\decoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\fixed.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\frame.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\huffman.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\layer3.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\stream.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\synth.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\timer.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libmad\version.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\bands.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\celt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\celt_decoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\celt_lpc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\cwrs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\entcode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\entdec.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\entenc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\kiss_fft.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\laplace.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\mathops.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\mdct.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\modes.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\pitch.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\quant_bands.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\rate.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\celt\vq.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\A2NLSF.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\CNG.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\HP_variable_cutoff.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\LPC_analysis_filter.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\LPC_fit.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\LPC_inv_pred_gain.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\LP_variable_cutoff.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF2A.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_VQ.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_VQ_weights_laroia.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_decode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_del_dec_quant.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_encode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_stabilize.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\NLSF_unpack.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\PLC.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\VQ_WMat_EC.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\ana_filt_bank_1.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\biquad_alt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\bwexpander.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\bwexpander_32.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\check_control_input.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\code_signs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\control_SNR.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\control_audio_bandwidth.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\control_codec.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\debug.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\dec_API.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_core.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_frame.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_indices.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_parameters.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_pitch.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decode_pulses.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\decoder_set_fs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\encode_indices.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\encode_pulses.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\LTP_analysis_filter_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\LTP_scale_ctrl_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\apply_sine_window_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\autocorr_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\burg_modified_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\corrMatrix_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\find_LPC_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\find_LTP_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\find_pred_coefs_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\k2a_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\k2a_Q16_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\process_gains_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\regularize_correlations_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\residual_energy16_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\residual_energy_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\schur64_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\schur_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\vector_ops_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\fixed\warped_autocorrelation_FIX.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\gain_quant.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\init_decoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\inner_prod_aligned.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\interpolate.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\lin2log.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\log2lin.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\pitch_est_tables.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\process_NLSFs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\quant_LTP_gains.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_down2.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_down2_3.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_private_AR2.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_private_IIR_FIR.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_private_down_FIR.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_private_up2_HQ.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\resampler_rom.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\shell_coder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\sigm_Q15.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\sort.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_LR_to_MS.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_MS_to_LR.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_decode_pred.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_encode_pred.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_find_predictor.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\stereo_quant_pred.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\sum_sqr_shift.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\table_LSF_cos.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_LTP.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_NLSF_CB_NB_MB.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_NLSF_CB_WB.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_gain.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_other.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_pitch_lag.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\silk\tables_pulses_per_block.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\src\opus.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\ESP8266Audio\libopus\src\opus_decoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib073\ESP8266SAM\ESP8266SAM.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib073\ESP8266SAM\esp8266sam_debug.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib073\ESP8266SAM\reciter.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib073\ESP8266SAM\render.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib073\ESP8266SAM\sam.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib56c\TinyGPSPlus\TinyGPS++.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib702\FFT\fft.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libddd\RF24\RF24.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib03c\Adafruit Si4713 Library\Adafruit_Si4713.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib643\JPEGDecoder\JPEGDecoder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib643\JPEGDecoder\picojpeg.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib97f\SmartRC-CC1101-Driver-Lib\ELECHOUSE_CC1101_SRC_DRV.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib926\mquickjs\cutils.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib926\mquickjs\dtoa.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib926\mquickjs\libm.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib926\mquickjs\mquickjs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib982\OneWire\OneWire.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib0a0\ESP32-PSRamFS\PSRamFS.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib0a0\ESP32-PSRamFS\pfs.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b8\AnimatedGIF\AnimatedGIF.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b8\AnimatedGIF\p4_transparent.S.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib2b8\AnimatedGIF\s3_transparent.S.o' from cache
+Compiling .pio\build\m5stack-cplus2\lib06b\Hash\PBKDF2_HMACBuilder.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib06b\Hash\SHA1Builder.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib06b\Hash\SHA2Builder.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib06b\Hash\SHA3Builder.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\libfca\AsyncTCP\AsyncTCP.cpp.o' from cache
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\AP.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\STA.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFi.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFiAP.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFiGeneric.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFiMulti.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFiSTA.cpp.o
+Compiling .pio\build\m5stack-cplus2\lib640\WiFi\WiFiScan.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\AsyncEventSource.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\AsyncJson.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\AsyncWebHeader.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\AsyncWebServerRequest.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\AsyncWebSocket.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\BackPort_SHA1Builder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\ChunkPrint.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\Middleware.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\WebAuthentication.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\WebHandlers.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\WebRequest.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\WebResponses.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib565\ESPAsyncWebServer\WebServer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\FastLED.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\bitswap.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\cled_controller.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\colorpalettes.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\crgb.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\allocator.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\async.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\audio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\audio_input.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\audio_reactive.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\bitset.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\blur.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\bytestreammemory.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\colorutils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\corkscrew.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\crgb_hsv16.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\downscale.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\ease.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\engine_events.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\fetch.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\fft.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\fft_impl.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\file_system.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\fill.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\gamma.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\gradient.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\hsv16.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\id_tracker.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\io.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\istream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\json.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\leds.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\line_simplification.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\noise_woryley.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\ostream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\ptr.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\random.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\raster_sparse.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\rectangular_draw_buffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\referent.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\rgbw.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\screenmap.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\sin32.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\splat.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\str.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\str_ui.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\strstream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\stub_main.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\task.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\tile2x2.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\time.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\time_alpha.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\transform.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\type_traits.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\ui.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\upscale.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\wave_simulation.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\wave_simulation_real.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\xmap.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\xymap.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\xypath.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\xypath_impls.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fl\xypath_renderer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\2d\blend.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\2d\luminova.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\2d\noisepalette.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\2d\scale_up.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\2d\wave.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\detail\fx_layer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\frame.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\fx_engine.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\time.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\video.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\video\frame_interpolator.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\video\frame_tracker.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\video\pixel_stream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\fx\video\video_impl.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\hsv2rgb.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\lib8tion.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\noise.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\adafruit\clockless.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\arm\k20\clockless_objectfled.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\arm\mgm240\fastpin_arm_mgm240.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\compile_test.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\audio\audio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\audio\sound_util.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\clockless_i2s_esp32s3.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\i2s\i2s_esp32dev.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\rmt_4\idf4_rmt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\rmt_4\idf4_rmt_impl.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\rmt_5\idf5_rmt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\rmt_5\strip_rmt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\esp\32\spi_ws2812\strip_spi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\stub\Arduino.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\stub\led_sysdefs_stub.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\stub\time_stub.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\active_strip_data.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\engine_listener.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\entry_point.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\fastspi_wasm.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\fs_wasm.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\js_bindings.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\js_fetch.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\timer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\platforms\wasm\ui.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\power_mgt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\sensors\button.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\sensors\digital_pin.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\sensors\pir.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\simplex.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\cq_kernel\cq_kernel.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\cq_kernel\kiss_fft.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\cq_kernel\kiss_fftr.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\espressif\led_strip\src\led_strip_api.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\espressif\led_strip\src\led_strip_rmt_dev.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\espressif\led_strip\src\led_strip_rmt_encoder.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\espressif\led_strip\src\led_strip_spi_dev.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\third_party\object_fled\src\OjectFLED.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\transpose8x1_noinline.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libb03\FastLED\wiring.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\Hal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\Module.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\hal\Arduino\ArduinoHal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\hal\RPiPico\PicoHal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\hal\Stm32duino\Stm32wlHal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\CC1101\CC1101.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LLCC68\LLCC68.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR1110.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR1120.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR1121.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR11x0.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR11x0_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR11x0_crypto.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR11x0_gnss.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR11x0_wifi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR11x0\LR_common.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_chip_control.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_flrc.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_gfsk.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_lora.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_misc.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_ook.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_oqpsk.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_radio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_cmds_ranging.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\LR2021\LR2021_config.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\RF69\RF69.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX123x\SX1231.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX123x\SX1233.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\STM32WLx.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX1261.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX1262.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX1268.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX126x.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX126x_LR_FHSS.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX126x_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX126x\SX126x_config.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1272.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1273.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1276.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1277.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1278.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX1279.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX127x\SX127x.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX128x\SX1280.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX128x\SX1281.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX128x\SX1282.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\SX128x\SX128x.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\Si443x\Si4430.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\Si443x\Si4431.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\Si443x\Si4432.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\Si443x\Si443x.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\modules\nRF24\nRF24.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\ADSB\ADSB.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\AFSK\AFSK.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\APRS\APRS.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\AX25\AX25.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\BellModem\BellModem.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\ExternalRadio\ExternalRadio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\FSK4\FSK4.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\Hellschreiber\Hellschreiber.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\LoRaWAN\LoRaWAN.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\LoRaWAN\LoRaWANBands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\LoRaWAN\LoRaWANPacMan.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\LoRaWAN\LoRaWANPackageTS003.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\LoRaWAN\LoRaWANPackageTS009.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\Morse\Morse.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\Pager\Pager.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\PhysicalLayer\PhysicalLayer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\Print\ITA2String.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\Print\Print.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\RTTY\RTTY.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\protocols\SSTV\SSTV.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\utils\BCH.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\utils\CRC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\utils\ConvCode.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\utils\Cryptography.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib83c\RadioLib\utils\Utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_message.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_poller.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_record.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_t2t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_t3t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_t4t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_t5t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_type_wifi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_types.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_types_mime.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\ndef_types_rtd.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_isoDep.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfc.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfcDep.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfca.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfcb.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfcf.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_nfcv.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_st25tb.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_st25xv.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_t1t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_t2t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib4a9\NFC-RFAL-fork\rfal_t4t.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\rfal_rfst25r3916.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\rfal_rfst25r3916_analogConfig.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\rfal_rfst25r3916_crc.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\rfal_rfst25r3916_iso15693_2.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\st25r3916.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\st25r3916_aat.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\st25r3916_com.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\st25r3916_interrupt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3ee\ST25R3916-fork\st25r3916_timer.cpp.o' from cache
+Compiling .pio\build\m5stack-cplus2\libd07\Preferences\Preferences.cpp.o
+Compiling .pio\build\m5stack-cplus2\liba31\Ethernet\ETH.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\BleKeyboard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\CH9329_Keyboard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_da_DK.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_de_DE.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_en_UK.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_en_US.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_es_ES.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_fr_FR.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_hu_HU.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_it_IT.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_pt_BR.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_pt_PT.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_si_SI.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_sv_SE.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\KeyboardLayout_tr_TR.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\USBHID.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\USBHIDKeyboard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib3de\Bad_Usb_Lib\USBHIDMouse.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbc5\TFT_eSPI_QRcode\frame.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbc5\TFT_eSPI_QRcode\qrcode.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libbc5\TFT_eSPI_QRcode\qrencode.c.o' from cache
+Compiling .pio\build\m5stack-cplus2\lib421\AsyncUDP\AsyncUDP.cpp.o
+Compiling .pio\build\m5stack-cplus2\liba0b\DNSServer\DNSServer.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib411\RTC\cplus_RTC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\lib411\RTC\pcf85063_RTC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\liba1b\utility\AXP192.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\liba1b\utility\Keyboard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\liba1b\utility\bq27220.cpp.o' from cache
+Compiling .pio\build\m5stack-cplus2\libf75\ESPmDNS\ESPmDNS.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\lib56b\PN532_SRIX\pn532_srix.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\boards\m5stack-cplus2\interface.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\bus_HAL.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\config.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\configPins.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\connect\esp_connection.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\connect\file_sharing.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\connect\serial_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\display.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\i2c_finder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\led_control.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\main_menu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\massStorage.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\BleMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\ClockMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\ConfigMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\ConnectMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\EthernetMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\FMMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\FileMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\GpsMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\IRMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\LoRaMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\NRF24.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\OthersMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\RFIDMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\RFMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\ScriptsMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\menu_items\WifiMenu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\mifare_keys_manager.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\mykeyboard.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\net_utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\passwords.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\powerSave.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\ram_profile.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\scrollableTextArea.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\sd_functions.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\badusb_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\cli.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\crypto_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\gpio_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\helpers.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\interpreter_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\ir_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\power_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\rf_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\rfid_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\screen_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\settings_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\sound_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\storage_commands.cpp.o' from cache
+Compiling .pio\build\m5stack-cplus2\src\core\serial_commands\util_commands.cpp.o
+Retrieved `.pio\build\m5stack-cplus2\src\core\serial_commands\wifi_commands.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\serialcmds.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\settings.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\startup_app.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\tftLogger\tftLogger.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\theme.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\type_convertion.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\wifi\webInterface.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\wifi\wg.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\wifi\wifi_common.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\core\wifi\wifi_mac.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\main.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\NRF24\nrf_common.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\NRF24\nrf_jammer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\NRF24\nrf_jammer_api.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\NRF24\nrf_mousejack.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\NRF24\nrf_spectrum.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\badusb_ble\ducky_typer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\audio_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\badusb_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\ble_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\buffer_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\device_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\dialog_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\display_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\globals_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\gpio_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\helpers_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\i2c_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\interpreter.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\ir_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\keyboard_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\led_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\math_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\menu_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\mic_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\notification_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\nrf24_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\rfid_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\runtime_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\serial_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\storage_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\subghz_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\bjs_interpreter\wifi_js.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\BLE_Suite.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\HFP_Exploit.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\ble_common.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\ble_ninebot.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\ble_sniffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\ble_spam.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble\fastpair_crypto.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble_api\ble_api.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble_api\services\BLESerialService.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ble_api\services\BatteryService.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\ARPScanner.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\ARPSpoofer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\ARPoisoner.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\DHCPStarvation.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\ESPNetifEthernetClient.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\EthernetHelper.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\HostInfo.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ethernet\MACFlooding.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\fm\fm.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\gps\gps_tracker.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\gps\wardriving.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\gps\wdgwars.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\gps\wigle.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ir\TV-B-Gone.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ir\custom_ir.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ir\ir_jammer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ir\ir_read.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\ir\ir_utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\lora\LoRaRF.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\audio.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\audio_player.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\clicker.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\ibutton.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\mic.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\qrcode_menu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\timer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\tururururu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\others\u2f.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\pwnagotchi\mood.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\pwnagotchi\pwnagotchi.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\pwnagotchi\pwngrid.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\pwnagotchi\spam.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\pwnagotchi\ui.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\reverseShell\reverseShell.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\emit.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_decoder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_encoder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_keeloq.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_legacy_migrate.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_presets.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\protocols\rf_registry.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\record.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_bruteforce.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_jammer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_listen.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_scan.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_send.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_spectrum.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\rf_waterfall.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rf\save.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\PN532.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\PN532KillerTools.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\RFID2.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\RFIDInterface.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\ST25R3916.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\amiibo.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\apdu.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\chameleon.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\crypto1.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\emv_reader.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\pn532ble.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\rfid125.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\srix_tool.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\rfid\tag_o_matic.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\ap_info.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\channel_analyzer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\clients.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\deauther.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\evil_portal.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\jam_detect.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\karma_attack.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\netcut.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\responder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\sniffer.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\socks4_proxy.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\tcp_utils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\wifi_atks.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\src\modules\wifi\wifi_recover.cpp.o' from cache
+Building .pio\build\m5stack-cplus2\bootloader.bin
+Generating partitions .pio\build\m5stack-cplus2\partitions.bin
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\ColorFormat.c.o' from cache
+esptool v5.3.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\Esp.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\FirmwareMSC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\FunctionalInterrupt.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\HEXBuilder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\HWCDC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\HardwareSerial.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\HashBuilder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\IPAddress.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\MD5Builder.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\MacAddress.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\Print.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\Stream.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\StreamString.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\StringUtils.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\Tone.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\USB.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\USBCDC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\USBMSC.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\WMath.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\WString.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\base64.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\cbuf.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\chip-debug-report.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-adc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-bt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-cpu.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-dac.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-gpio.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-hosted.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-i2c-ng.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-i2c-slave.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-i2c.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-ldo.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-ledc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-log-wrapper.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-matrix.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-misc.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-periman.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-psram.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-rgb-led.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-rmt.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-sigmadelta.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-spi.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-time.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-timer.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-tinyusb.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-touch-ng.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-touch.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\esp32-hal-uart.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\firmware_msc_fat.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\freertos_stats.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\idf_openthread_mpool_wrapper.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\libb64\cdecode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\libb64\cencode.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\main.cpp.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\stdlib_noniso.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\wiring_pulse.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\FrameworkArduino\wiring_shift.c.o' from cache
+Retrieved `.pio\build\m5stack-cplus2\libFrameworkArduino.a' from cache
+Linking .pio\build\m5stack-cplus2\firmware.elf
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_gap.c:9451:16: warning: type of 'is_ble_hs_resolv_enabled' does not match original declaration [-Wlto-type-mismatch]
+ 9451 |     extern int is_ble_hs_resolv_enabled(void);
+      |                ^
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: return value type mismatch
+  331 | is_ble_hs_resolv_enabled(void)
+      | ^
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: type 'uint8_t' should match type 'int'
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/nimble/nimble/host/src/ble_hs_resolv.c:331:1: note: 'is_ble_hs_resolv_enabled' was previously declared here
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:32:7: warning: virtual table of type 'struct scanCallbacks' violates one definition rule [-Wodr]
+   32 | class scanCallbacks : public NimBLEAdvertisedDeviceCallbacks {
+      |       ^
+.pio/libdeps/m5stack-cplus2/ESP Chameleon Ultra/src/chameleonUltra.cpp:32:7: note: the conflicting type defined in another translation unit
+.pio/libdeps/m5stack-cplus2/NimBLE-Arduino/src/NimBLEScan.h:220:18: note: virtual method 'onResult'
+  220 |     virtual void onResult(const NimBLEAdvertisedDevice* advertisedDevice);
+      |                  ^
+.pio/libdeps/m5stack-cplus2/ESP PN32BLE/src/pn532_ble.cpp:29:10: note: ought to match virtual method 'onResult' but does not
+   29 |     void onResult(const NimBLEAdvertisedDevice *advertisedDevice)
+      |          ^
+lto-wrapper.exe: warning: using serial compilation of 57 LTRANS jobs
+lto-wrapper.exe: note: see the '-flto' option documentation for more information
+Memory region         Used Size  Region Size  %age Used
+     iram0_0_seg:      118900 B       128 KB     90.71%
+     iram0_2_seg:     2821312 B    3342304 B     84.41%
+     dram0_0_seg:      100108 B     124580 B     80.36%
+     drom0_0_seg:      828807 B    4194272 B     19.76%
+    rtc_iram_seg:           0 B       8176 B      0.00%
+    rtc_data_seg:           0 B       8176 B      0.00%
+rtc_fast_reserved_seg:          16 B         16 B    100.00%
+    rtc_slow_seg:         128 B       7656 B      1.67%
+rtc_slow_reserved_seg:          24 B         24 B    100.00%
+  extern_ram_seg:           0 B         4 MB      0.00%
+Firmware metrics can not be shown. Set the terminal codepage to "utf-8" or "cp65001" on Windows.
+Retrieving maximum program size .pio\build\m5stack-cplus2\firmware.elf
+Checking size .pio\build\m5stack-cplus2\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [===       ]  30.5% (used 100104 bytes from 327680 bytes)
+Flash: [=====     ]  45.1% (used 3782535 bytes from 8388608 bytes)
+Building .pio\build\m5stack-cplus2\firmware.bin
+esptool v5.3.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Creating binary "firmware.factory.bin" with:
+    Offset   | File
+ -  0x1000   | bootloader.bin
+ -  0x8000   | partitions.bin
+ -  0xe000   | boot_app0.bin
+ -  0x10000  | firmware.bin
+Successfully created combined binary image.
+_merge_bins_callback([".pio\build\m5stack-cplus2\firmware.bin"], [".pio\build\m5stack-cplus2\firmware.elf"])
+[merge_bin] Merging binaries:
+  "C:\Users\Adam\.platformio\penv\Scripts\python.exe" -m platformio pkg exec -p "tool-esptoolpy" -- esptool.py --chip esp32 merge-bin --output "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\Bruce-m5stack-cplus2.bin" 0x1000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\bootloader.bin" 0x8000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\partitions.bin" 0x10000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\firmware.bin"
+"C:\Users\Adam\.platformio\penv\Scripts\python.exe" -m platformio pkg exec -p "tool-esptoolpy" -- esptool.py --chip esp32 merge-bin --output "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\Bruce-m5stack-cplus2.bin" 0x1000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\bootloader.bin" 0x8000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\partitions.bin" 0x10000 "C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\.pio\build\m5stack-cplus2\firmware.bin"
+Using tool-esptoolpy@5.3.0 package
+Warning: DEPRECATED: 'esptool.py' is deprecated. Please use 'esptool' instead. The '.py' suffix will be removed in a future major release.
+esptool v5.3.0
+Wrote 0x3ab9a0 bytes to file 'C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\Bruce-m5stack-cplus2.bin', ready to flash to offset 0x0.
+[merge_bin] Success -> C:\Users\Adam\Documents\Codex\2026-07-24\i-have-a-cardputer-adv-and\bruce\Bruce-m5stack-cplus2.bin (3848608 bytes)
+======================== [SUCCESS] Took 173.71 seconds ========================
+
+Environment     Status    Duration
+--------------  --------  ------------
+m5stack-cplus2  SUCCESS   00:02:53.707
+========================= 1 succeeded in 00:02:53.707 =========================

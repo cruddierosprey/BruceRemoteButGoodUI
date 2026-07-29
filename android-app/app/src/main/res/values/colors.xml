@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bruce_primary">#FFB000</color>
+    <color name="bruce_on_primary">#261900</color>
+    <color name="bruce_secondary">#8FC7FF</color>
+    <color name="bruce_background">#101418</color>
+    <color name="bruce_surface">#171C21</color>
+    <color name="bruce_surface_variant">#29323A</color>
+    <color name="bruce_outline">#6F7A83</color>
+    <color name="bruce_success">#5FD38D</color>
+    <color name="bruce_error">#FF6B6B</color>
+    <color name="bruce_text">#E8EDF2</color>
+    <color name="bruce_text_muted">#AAB4BD</color>
+</resources>

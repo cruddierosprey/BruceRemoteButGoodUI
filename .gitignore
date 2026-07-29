@@ -1,0 +1,25 @@
+# Build outputs and caches
+/.gradle/
+/.kotlin/
+/**/build/
+/.idea/
+*.iml
+/.native-build/
+/.platformio/
+/.venv/
+
+# Android native build cache
+android-app/**/.cxx/
+android-app/**/build/
+
+# Python caches
+tools/__pycache__/
+*.pyc
+*.pyo
+
+# Local signing keys (never commit private keys)
+/local-keys/*.pem
+/local-keys/*.key
+
+# Build logs are kept for now but may be ignored later
+# /build-logs/

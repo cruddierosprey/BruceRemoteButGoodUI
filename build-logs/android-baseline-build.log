@@ -1,0 +1,127 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :app:clean
+
+> Task :flasher-native:externalNativeBuildCleanDebug
+Clean bruce_flasher-armeabi-v7a, flasher-armeabi-v7a
+Clean bruce_flasher-arm64-v8a, flasher-arm64-v8a
+Clean bruce_flasher-x86, flasher-x86
+Clean bruce_flasher-x86_64, flasher-x86_64
+
+> Task :flasher-native:externalNativeBuildCleanRelease
+> Task :flasher-native:clean
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :flasher-native:preBuild UP-TO-DATE
+> Task :flasher-native:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResValues
+> Task :flasher-native:generateDebugResValues
+> Task :flasher-native:writeDebugAarMetadata
+> Task :flasher-native:generateDebugResources
+> Task :app:checkDebugAarMetadata
+> Task :flasher-native:packageDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :flasher-native:extractDeepLinksDebug
+> Task :flasher-native:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :flasher-native:compileDebugLibraryResources
+> Task :flasher-native:parseDebugLocalResources
+> Task :flasher-native:javaPreCompileDebug
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :flasher-native:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :flasher-native:javaPreCompileDebugUnitTest
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:parseDebugLocalResources
+> Task :app:mergeDebugResources
+> Task :app:mergeDebugShaders
+> Task :flasher-native:generateDebugRFile
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :flasher-native:processDebugManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :flasher-native:mergeDebugShaders
+> Task :flasher-native:compileDebugShaders NO-SOURCE
+> Task :flasher-native:generateDebugAssets UP-TO-DATE
+> Task :flasher-native:generateDebugUnitTestStubRFile
+> Task :flasher-native:packageDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+
+> Task :flasher-native:configureCMakeDebug[arm64-v8a]
+[CXX5304] This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+[CXX5304] This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+
+> Task :flasher-native:compileDebugKotlin
+> Task :app:processDebugManifestForPackage
+> Task :flasher-native:compileDebugJavaWithJavac NO-SOURCE
+> Task :flasher-native:bundleLibRuntimeToJarDebug
+> Task :flasher-native:bundleLibCompileToJarDebug
+> Task :flasher-native:processDebugJavaRes
+> Task :flasher-native:compileDebugUnitTestKotlin NO-SOURCE
+> Task :flasher-native:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :flasher-native:processDebugUnitTestJavaRes NO-SOURCE
+> Task :flasher-native:testDebugUnitTest NO-SOURCE
+> Task :flasher-native:bundleLibRuntimeToDirDebug
+> Task :app:processDebugResources
+> Task :app:mergeExtDexDebug
+> Task :flasher-native:buildCMakeDebug[arm64-v8a]
+> Task :flasher-native:configureCMakeDebug[armeabi-v7a]
+> Task :app:mergeLibDexDebug
+> Task :flasher-native:buildCMakeDebug[armeabi-v7a]
+> Task :flasher-native:configureCMakeDebug[x86]
+> Task :flasher-native:buildCMakeDebug[x86]
+> Task :flasher-native:configureCMakeDebug[x86_64]
+> Task :flasher-native:buildCMakeDebug[x86_64]
+> Task :flasher-native:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :flasher-native:mergeDebugNativeLibs
+> Task :app:writeDebugSigningConfigVersions
+> Task :flasher-native:copyDebugJniLibsProjectOnly
+> Task :flasher-native:extractDebugAnnotations
+> Task :flasher-native:extractDeepLinksForAarDebug
+> Task :flasher-native:mergeDebugGeneratedProguardFiles
+> Task :flasher-native:mergeDebugConsumerProguardFiles
+> Task :flasher-native:stripDebugDebugSymbols
+> Task :flasher-native:prepareDebugArtProfile
+> Task :app:mergeDebugNativeLibs
+> Task :flasher-native:prepareLintJarForPublish
+> Task :flasher-native:copyDebugJniLibsProjectAndLocalJars
+> Task :app:stripDebugDebugSymbols
+> Task :flasher-native:mergeDebugJavaResource
+> Task :flasher-native:syncDebugLibJars
+> Task :flasher-native:bundleDebugAar
+> Task :flasher-native:assembleDebug
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/android-app/app/src/main/java/io/bruceremote/app/FirmwareActivity.kt:225:19 'fun onBackPressed(): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Adam/Documents/Codex/2026-07-24/i-have-a-cardputer-adv-and/android-app/app/src/main/java/io/bruceremote/app/FirmwareActivity.kt:289:41 'fun onBackPressed(): Unit' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+
+BUILD SUCCESSFUL in 55s
+88 actionable tasks: 88 executed
