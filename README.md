@@ -1,14 +1,19 @@
 # Bruce Remote for Android
 
+Android remote control app for [Bruce](https://github.com/pr3y/Bruce) firmware on M5Stack devices.
+
+**Repository:** https://github.com/floatme/BruceRemote
+
 This workspace contains a working Android prototype for controlling Bruce over
 USB, an optional Bruce remote-discovery patch, a signed exact-binary patch
 pipeline, and native ESP32/ESP32-S3 flashing support.
 
-Supported hardware:
+## Supported hardware
 
 - M5Stack Cardputer ADV (ESP32-S3 native USB)
 - M5Stack Cardputer (the same Bruce image auto-detects the original keyboard)
 - M5StickC Plus2 (ESP32 through its CH9102 USB-to-UART bridge)
+- Any M5Stack device running Bruce firmware with serial command support
 
 ## What works without patched firmware
 
@@ -119,28 +124,71 @@ result can then be flashed normally.
 The included key is a local development key. Do not treat it as a production
 release key or redistribute these artifacts unchanged.
 
-## Planned GitHub firmware channel
+## Firmware patch for any M5Stack device
 
-The intended production flow is a dedicated GitHub repository with:
+The Android app works with stock Bruce 1.12+ for basic control, but the
+**Screen** preview and some remote features need a small firmware patch.
 
-- a GitHub Actions job that notices a new upstream Bruce release, checks out
-  that exact tag, applies the reviewed source patch, and builds both targets;
-- a small signed catalog describing the supported device, Bruce version,
-  release notes, download URL, image SHA-256, size, and minimum app version;
-- GitHub Releases containing merged images, signatures, build provenance, and
-  the complete corresponding source required by Bruce's license;
-- an Android update screen that checks the catalog, notifies the user,
-  downloads and verifies the selected image, identifies the connected ESP32,
-  and then opens the existing confirmation-and-flash wizard.
+### What the patch fixes
 
-The updater should never silently flash a device. Downloading can be automatic,
-but ROM entry, device identification, and final flashing remain explicit user
-actions. A production release key should be kept outside the repository (for
-example in protected CI signing infrastructure), while only its public key is
-pinned in the app.
+Bruce's `handleSerialCommands()` had a bug where queued commands (used by the
+Android app) did not emit the `# ` prompt after completion. This caused:
+- `display start` to time out after 30 seconds
+- Screen preview to fail
+- Other queued commands to appear stuck
 
-No external repository is created by this prototype; its GitHub owner and
-repository name must be chosen first.
+The fix adds one line: `serialDevice->print("# ");` after processing queued
+commands.
+
+### Building patched firmware for any board
+
+1. Clone the Bruce firmware repository:
+   ```bash
+   git clone https://github.com/pr3y/Bruce
+   cd Bruce
+   ```
+
+2. Apply the patch to `src/core/serialcmds.cpp`:
+   ```cpp
+   void handleSerialCommands(SerialCli &serialCli) {
+       CmdPacket packet;
+       if (cmdQueue && rspQueue) {
+           if (xQueueReceive(cmdQueue, &packet, 0) == pdTRUE) {
+               bool result = serialCli.parse(String(packet.text));
+               xQueueSend(rspQueue, &result, 0);
+               Serial.println("COMMAND: " + String(packet.text));
+               Serial.printf("[CLI] Result: %s\n", result ? "TRUE" : "FALSE");
+               serialDevice->print("# ");  // <-- ADD THIS LINE
+           }
+       }
+       // ... rest of function
+   }
+   ```
+
+3. Build for your target board:
+   ```bash
+   pio run --environment m5stack-cplus2    # M5StickC Plus2
+   pio run --environment m5stack-cardputer  # Cardputer
+   pio run --environment m5stack-sticks3     # M5StickC Plus2 (alternative)
+   ```
+
+4. Flash the built firmware:
+   ```bash
+   pio run --environment m5stack-cplus2 --target upload
+   ```
+
+The patched firmware is fully backward-compatible with stock Bruce. Devices
+without the patch simply won't show the Screen preview; all other features work.
+
+## GitHub firmware channel
+
+This project is now hosted at https://github.com/floatme/BruceRemote.
+
+Future plans:
+- GitHub Actions for automated builds on new upstream Bruce releases
+- Signed release catalog with device compatibility matrix
+- In-app firmware update notifications
+- Support for additional M5Stack boards (Core2, CoreS3, etc.)
 
 ## Project layout
 
