@@ -1,252 +1,428 @@
-# Bruce Remote — Good UI
+# Bruce Remote
 
-A cleaner, phone-first Android remote controller for **Bruce firmware** running on ESP32 / ESP32-S3 devices.
+A mobile-first Android remote controller and virtual display for **Bruce firmware** running on ESP32 / ESP32-S3 devices.
 
-This project is based on the excellent [BruceRemote](https://github.com/floatme/BruceRemote) project, with the goal of keeping its working USB/serial control layer while providing a more polished and practical Android interface for devices that may have **no physical screen or buttons at all**.
+This repository is a community fork of [floatme/BruceRemote](https://github.com/floatme/BruceRemote). The original project proved that Bruce can be controlled over USB serial from Android. This fork keeps that core idea and protocol compatibility, but rebuilds the Android experience around a cleaner, touch-friendly **Kotlin + Jetpack Compose + Material 3** interface.
 
-> **Tested successfully on:** ESP32-S3 N16R8 (16 MB Flash / 8 MB PSRAM) running stock Bruce firmware, controlled directly from an Android phone over USB.
+The main reason for this fork was simple: use Bruce comfortably on an ESP32-S3 board that has **no physical display and no navigation buttons**, with the Android phone acting as the screen and controller.
 
-## Why this exists
+> **Real-hardware tested:** ESP32-S3 N16R8 (16 MB Flash / 8 MB PSRAM), stock/original Bruce firmware, Android phone, direct USB-OTG connection.
 
-Bruce works great on devices with a built-in display and buttons, but generic ESP32-S3 development boards often have neither.
+---
 
-Bruce Remote — Good UI turns the Android phone into the device interface:
+## What this fork changes
+
+The upstream BruceRemote project already had the important low-level pieces: Android USB serial access, Bruce CLI commands, menu discovery, navigation and experimental display streaming.
+
+This fork focuses on turning that working prototype into a more practical daily-use Android controller.
+
+### UI / UX
+
+- Rebuilt Android interface with **Jetpack Compose + Material 3**
+- Mobile-first dark interface
+- Large live Bruce display area
+- Compact touch-friendly D-Pad
+- Dedicated **OK / Select** and **Back / ESC** controls
+- Haptic feedback option
+- Portrait and landscape layouts
+- Android safe-area / system-bar aware layout
+- Removed unnecessary fullscreen behavior that could overlap Android system UI
+- Simplified controller by removing non-essential permanent buttons
+
+### Bruce control
+
+- Current Bruce menu is requested with `optionsJSON`
+- Menu entries are shown as tappable Android shortcuts
+- D-Pad navigation uses Bruce `nav ...` commands
+- Direct selection uses `options <index>`
+- Device discovery tries `remote hello` / `remote state` when available and falls back to stock Bruce commands
+- `info`, `display start`, `display stop` and arbitrary shell commands can be sent from the app
+
+Bruce remains the source of truth. The Android app does **not** reimplement Wi-Fi, BLE, RF, IR or other Bruce modules — it controls the Bruce firmware already running on the ESP32.
+
+### USB / serial stability
+
+- Android USB Host / OTG support
+- USB attach detection and permission handling
+- ESP32-S3 native USB / CDC support
+- WCH CH9102 family support
+- Generic CDC-ACM fallback
+- 115200 baud, 8-N-1
+- DTR / RTS intentionally left untouched during normal remote use
+- Prompt-synchronized command queue using Bruce's `# ` prompt
+- Bounded command queue to reduce input flooding
+- Graceful USB disconnect handling
+- Connection/session generation checks to avoid stale USB callbacks
+- Serial telemetry for received/sent bytes and packet counts
+
+### Built-in terminal
+
+The **Terminal** tab provides a Bruce serial console without needing a second Android serial-terminal app.
+
+It includes:
+
+- RX / TX / system / error log separation
+- timestamps
+- command history
+- quick commands
+- copy log
+- clear log
+- bounded in-memory log history
+
+### Device page
+
+The **Device** tab exposes information gathered from USB and Bruce, including:
+
+- USB device name
+- VID:PID
+- serial driver
+- connection uptime
+- bytes received / sent
+- received packet count
+- Bruce firmware/device information when available
+
+---
+
+## Why it was developed
+
+Generic ESP32-S3 development boards are inexpensive and powerful, but many of them do not include the display and keyboard/button hardware that Bruce-oriented devices such as Cardputer provide.
+
+For the tested setup, the goal was:
 
 ```text
-ESP32-S3 running Bruce
-        │
-        │ USB / OTG
-        ▼
-Android phone
-        │
-        ├── Live Bruce screen preview
-        ├── D-Pad + OK + Back / ESC
-        ├── Bruce menu shortcuts
-        ├── Serial terminal
-        └── Device / connection information
+ESP32-S3 N16R8 + Bruce
+          │
+          │ USB
+          ▼
+      Android phone
+          │
+          ├── Bruce screen
+          ├── D-Pad
+          ├── OK / ESC
+          ├── Bruce menu shortcuts
+          ├── Serial terminal
+          └── Device information
 ```
 
-No OLED, joystick, buttons, jumper wires or external controller are required for the tested setup.
+This means the ESP32-S3 can be used without adding an OLED, joystick, buttons or jumper wiring just to access Bruce's interface.
 
-## Features
+---
 
-- USB Host / OTG connection to compatible ESP32 devices
-- Native ESP32-S3 USB serial support
-- 115200 8-N-1 Bruce serial communication
-- Live Bruce display preview using `display start`
-- Large touch-friendly D-Pad
-- OK / Select and Back / ESC controls
-- Bruce menu discovery and navigation
-- Direct menu shortcuts from Android
-- Built-in serial terminal
-- Device and USB connection information
-- Portrait and landscape layouts
-- Graceful USB disconnect / reconnect handling
-- Dark, mobile-first UI
-- No root required
-- Bruce remains authoritative — the Android app controls the firmware instead of reimplementing Bruce features
+## Development with Google AI Studio
 
-## Tested hardware
+This redesigned Android client was developed **with Google AI Studio as an AI-assisted development environment**.
 
-The setup below has been tested with the application:
+The process was iterative rather than a one-shot generated application:
 
-### ESP32-S3 N16R8
+1. The upstream BruceRemote repository was used as the protocol/reference implementation.
+2. The working USB and Bruce communication behavior was studied first.
+3. The Android UI was redesigned around Kotlin, Jetpack Compose and Material 3.
+4. Changes were repeatedly installed on a real Android phone.
+5. USB connection, menu navigation, display streaming, D-Pad controls, portrait/landscape behavior, disconnect/reconnect behavior and terminal operation were tested against a real ESP32-S3 N16R8 board.
+6. The UI was simplified after hardware testing instead of continuously adding new features.
+
+AI Studio was used to assist implementation and refactoring; **the actual requirements, hardware setup, testing and acceptance decisions were human-directed**.
+
+The remote-control path itself is local USB serial communication. The current Android manifest does not request Internet permission for normal operation.
+
+---
+
+## Tested setup
+
+### ESP32-S3 board
+
+Tested with a dual USB-C **ESP32-S3 N16R8** development board:
 
 - ESP32-S3
 - 16 MB Flash
 - 8 MB PSRAM
-- Dual USB-C development board
-- Stock Bruce firmware
-- Android phone with USB Host / OTG support
+- dual USB-C
 
-On the tested dual-USB board:
+On the tested board the two USB-C connectors have different roles:
 
-- **COM USB-C port** → used for firmware flashing / USB-UART
-- **USB USB-C port** → ESP32-S3 native USB; use this port for the Android remote
+- **COM** port: USB-to-UART / convenient firmware flashing
+- **USB** port: ESP32-S3 native USB used by Bruce Remote on Android
 
-Other Bruce-compatible boards may also work when they expose Bruce's serial command interface over a USB serial connection.
+If your board has two USB connectors and the app does not detect/control Bruce through one of them, try the connector wired to the ESP32-S3's native USB peripheral.
 
-## Bruce firmware
+### Android
 
-The tested configuration uses the **original Bruce firmware**, not a custom display firmware.
+The current project configuration uses:
 
-For the ESP32-S3 N16R8 board used during development, the working Bruce flasher target was:
+- `minSdk 24`
+- `targetSdk 36`
+- Android USB Host feature
+
+Your Android device must support **USB Host / OTG** and must be able to power/enumerate the connected ESP32 device.
+
+Use a **data-capable USB cable**. Charge-only cables will not work.
+
+---
+
+## Installing Bruce on the tested N16R8 board
+
+The working setup uses the **official/original Bruce firmware**.
+
+Official Bruce links:
+
+- [Bruce firmware](https://github.com/BruceDevices/firmware)
+- [Bruce website / flasher](https://bruce.computer)
+
+For the tested ESP32-S3 N16R8 board, the working Bruce Web Flasher target was:
 
 ```text
 ESP32 S3 PSRAM
 └── esp32-s3-devkitc-1-psram
 ```
 
-Official Bruce project:
+A useful detail for dual-USB boards: firmware flashing may work through the USB-to-UART/COM connector while Bruce's application serial output and Android remote control are available through the **native USB** connector.
 
-- https://github.com/BruceDevices/firmware
-- https://bruce.computer
-
-After flashing, connect the board's **native USB port** to the Android phone for remote control.
-
-## Android requirements
-
-- Android device with USB Host / OTG support
-- USB data cable — charge-only cables will not work
-- Compatible ESP32 / ESP32-S3 running Bruce
-- Android 8.0+ (`minSdk 26` in the current Android project)
-
-When Android asks whether the application may access the USB device, grant permission.
+---
 
 ## Quick start
 
-1. Flash compatible Bruce firmware to the ESP32 device.
-2. Disconnect the board from the PC.
-3. Connect the board's native USB port to the Android phone with a data-capable USB cable / OTG connection.
-4. Open Bruce Remote — Good UI.
-5. Grant the Android USB permission when requested.
-6. Tap **Connect**.
-7. Start the live display stream if it is not already active.
-8. Control Bruce with the on-screen D-Pad, **OK**, and **Back / ESC**.
+1. Install stock Bruce on the ESP32 / ESP32-S3.
+2. Install the Bruce Remote APK from this repository's **Releases** page.
+3. Connect the ESP32's working USB serial/native USB port to the Android device.
+4. Grant the Android USB permission when prompted.
+5. Open **Bruce Remote**.
+6. Select/connect the detected USB device if it is not already connected.
+7. The app initializes the Bruce session and can automatically start the display stream.
+8. Use the on-screen D-Pad, **OK** and **Back / ESC**, or tap a discovered Bruce menu option directly.
 
-The app also exposes Bruce's current menu options above the screen preview, allowing direct menu selection where supported.
+> APK releases will be published under GitHub **Releases**. Source builds are documented below.
 
-## App screens
+---
+
+## App layout
 
 ### Remote
 
-The main controller view contains:
+The main screen contains:
 
 - USB connection status
-- Current Bruce menu options
-- Live Bruce screen preview
+- current Bruce menu / option shortcuts
+- live Bruce display preview
 - D-Pad
 - OK / Select
 - Back / ESC
 
-This is the primary screen for using a headless ESP32-S3 as if it had its own display and buttons.
-
 ### Terminal
 
-A serial terminal for sending Bruce shell commands and viewing responses/logs.
-
-Useful for debugging and advanced use without switching to a separate serial-terminal application.
+Interactive Bruce serial terminal with quick commands, history and bounded logs.
 
 ### Device
 
-Shows information available from the USB connection and Bruce, such as connection state, serial settings and device details.
+USB/session telemetry and Bruce/device information.
 
 ### Settings
 
-Application-level settings. Bruce itself remains controlled by the firmware and its own command/menu system.
+Current settings include:
 
-## Important: live screen preview limitations
-
-The live preview is **not a raw framebuffer mirror**.
-
-Bruce's `display start` interface sends drawing operations that the Android application replays. Because not every possible TFT operation is represented in the stream, some graphics can occasionally appear incomplete.
-
-You may notice issues such as:
-
-- part of an icon missing
-- sprites not appearing perfectly
-- fast animations looking incomplete
-- a screen becoming correct only after another navigation event causes a redraw
-
-Text, menus, lines and common UI elements generally work well.
-
-This behavior does **not necessarily indicate a USB connection problem**. If Bruce never sends a particular drawing operation, the Android application cannot reconstruct those missing pixels perfectly.
-
-The project intentionally does not invent missing screen data or fake a framebuffer image.
-
-## USB notes
-
-### Device connects but the app cannot control Bruce
-
-Make sure you are using the correct physical USB port.
-
-On some ESP32-S3 boards, one USB-C connector is connected to a USB-to-UART chip while another goes directly to the ESP32-S3 native USB peripheral. For the tested N16R8 board, Android control works through the **native USB** connector.
-
-### Android does not detect the board
-
-Check that:
-
-- USB OTG / Host mode is supported
-- the cable supports data
-- the correct ESP32 USB port is being used
-- no PC or other application currently owns the same USB connection
-
-### USB is unplugged while connected
-
-The application is designed to return to a disconnected state instead of crashing. Reconnect the board and connect again.
-
-## Building from source
-
-The Android project is located in:
-
-```text
-android-app/
-```
-
-Open that directory in Android Studio, or build with JDK 17 and Gradle.
-
-Windows:
-
-```powershell
-cd android-app
-gradlew.bat assembleDebug
-```
-
-Linux / macOS:
-
-```bash
-cd android-app
-./gradlew assembleDebug
-```
-
-The generated debug APK will be under the app module's Gradle build output directory.
-
-## Project philosophy
-
-The objective is deliberately small:
-
-> Make Bruce comfortable to use from an Android phone without breaking the protocol that already works.
-
-The application is not intended to replace Bruce, duplicate its modules in Android, or turn the phone into an independent RF/security toolkit.
-
-Bruce runs on the ESP32. The phone is the display, controller and serial client.
-
-## Safety and responsible use
-
-Bruce contains hardware and wireless testing features. Use those features only on devices, networks, radio systems and equipment that you own or have explicit permission to test.
-
-This Android application is only a remote interface; the capabilities available depend on the connected hardware and the Bruce firmware installed on it.
-
-## Credits
-
-This project would not exist without:
-
-- [Bruce Devices / Bruce firmware](https://github.com/BruceDevices/firmware)
-- [floatme / BruceRemote](https://github.com/floatme/BruceRemote) — the project this work is based on
-- [usb-serial-for-android](https://github.com/mik3y/usb-serial-for-android)
-- The Bruce community and contributors
-
-Bruce Remote — Good UI focuses primarily on the Android user experience and on making the existing remote-control workflow practical for headless ESP32-S3 boards.
-
-## Status
-
-The core workflow has been tested on real hardware:
-
-- [x] USB connection
-- [x] ESP32-S3 native USB
-- [x] Bruce serial communication
-- [x] Live display stream
-- [x] D-Pad navigation
-- [x] OK / Select
-- [x] Back / ESC
-- [x] Bruce menu navigation
-- [x] Terminal
-- [x] Portrait mode
-- [x] Landscape mode
-- [x] USB disconnect / reconnect handling
-
-The screen preview still inherits the limitations of Bruce's drawing-command stream described above.
+- haptic feedback
+- automatic `display start`
+- manual menu/display resync
+- protocol information
 
 ---
 
-**Bruce Remote — Good UI is an independent community project and is not an official Bruce Devices application.**
+## Live display preview: important limitation
+
+The screen shown on Android is **not a raw framebuffer capture**.
+
+Bruce's `display start` protocol sends TFT drawing operations over the same serial connection. The app separates those binary packets from normal CLI text, then replays the supported drawing operations into an Android bitmap.
+
+The parser recognizes the Bruce TFT packet stream (`0xAA` header) and the renderer handles common primitives such as:
+
+- screen fill
+- rectangles / rounded rectangles
+- circles
+- triangles
+- ellipses
+- lines / wide lines
+- arcs
+- text / print operations
+- pixels
+- fast horizontal / vertical lines
+- screen geometry information
+
+### Why can some icons look incomplete?
+
+Bruce does not send a complete screenshot or framebuffer. Some UI graphics can be produced by image/sprite/native-driver operations that are not fully represented as pixel data in the stream.
+
+In the current renderer, an image packet can provide a path/reference rather than the real image pixels. For that reason you may occasionally see:
+
+- incomplete icons
+- missing parts of a logo
+- imperfect sprites
+- fast animations that do not reconstruct perfectly
+- a screen that becomes more complete after the next menu redraw
+
+This is a limitation of the available Bruce drawing stream, not necessarily a USB fault.
+
+The app intentionally does not fabricate missing framebuffer data.
+
+---
+
+## How the Android side is structured
+
+The redesigned client separates USB transport, Bruce protocol handling, display parsing and UI state.
+
+Important components in the current source include:
+
+```text
+usb/
+  UsbSerialController
+  UsbModels
+
+protocol/
+  BruceProtocol
+  BruceCommandQueue
+  BruceLineParser
+  BruceTftProtocol
+  BruceTftStreamParser
+
+display/
+  BruceDisplayEngine
+
+viewmodel/
+  BruceViewModel
+
+ui/
+  Remote
+  Terminal
+  Device
+  Settings
+```
+
+### Communication flow
+
+```text
+Android USB Host
+      │
+      ▼
+UsbSerialController
+      │
+      ▼
+BruceTftStreamParser ───► BruceDisplayEngine ───► Compose / Android View
+      │
+      └────────► BruceLineParser ───► Bruce protocol / menu state
+                                      │
+                                      ▼
+                               BruceCommandQueue
+                                      │
+                                      ▼
+                                   ESP32
+```
+
+The command queue waits for Bruce's shell prompt before advancing to the next queued request, which helps avoid merging commands during rapid touchscreen input.
+
+---
+
+## Building the redesigned Android app
+
+The AI Studio export is a standard Android Gradle project using Kotlin and Jetpack Compose.
+
+Current important build values:
+
+```text
+Application ID : com.aistudio.bruceremote.s3ctrl
+minSdk         : 24
+targetSdk      : 36
+versionName    : 1.0
+```
+
+Open the project in a recent Android Studio installation with a compatible JDK/Android SDK.
+
+The current exported source does not include a Gradle wrapper, so either build from Android Studio or use an installed compatible Gradle environment.
+
+Example:
+
+```bash
+gradle :app:assembleDebug
+```
+
+Debug APK output:
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
+
+For a public release, build and sign a release APK with your own signing key.
+
+---
+
+## Tested status
+
+The following workflow was tested on real hardware:
+
+- [x] ESP32-S3 N16R8
+- [x] stock/original Bruce firmware
+- [x] Android USB Host / OTG
+- [x] ESP32-S3 native USB serial
+- [x] USB permission flow
+- [x] connect / disconnect
+- [x] hot unplug without intentional app crash
+- [x] Bruce CLI communication
+- [x] menu discovery
+- [x] direct menu selection
+- [x] D-Pad navigation
+- [x] OK / Select
+- [x] Back / ESC
+- [x] live display stream
+- [x] portrait layout
+- [x] landscape layout
+- [x] terminal
+- [x] device/session telemetry
+
+Other boards may work through CDC-ACM, CH9102 or another driver supported by `usb-serial-for-android`, but **only the hardware explicitly listed above should be considered verified by this fork unless additional test reports are added**.
+
+---
+
+## Upstream and credits
+
+This work builds on existing projects rather than replacing them.
+
+Special thanks to:
+
+- [floatme/BruceRemote](https://github.com/floatme/BruceRemote) — upstream Android remote/reference implementation
+- [BruceDevices/firmware](https://github.com/BruceDevices/firmware) — Bruce firmware and serial/display interfaces
+- [mik3y/usb-serial-for-android](https://github.com/mik3y/usb-serial-for-android) — Android USB serial driver library
+- Bruce contributors and community members
+
+The application name remains **Bruce Remote**. This repository is an unofficial community fork and is not an official Bruce Devices Android application.
+
+---
+
+## Responsible use
+
+Bruce includes networking, radio, USB and hardware-testing functionality. Use these capabilities only on devices, networks and systems that you own or are explicitly authorized to test.
+
+Bruce Remote is only a controller/interface. The actual capabilities come from the connected hardware and the Bruce firmware running on it.
+
+---
+
+## Türkçe kısa açıklama
+
+Bu fork'un amacı, **ekranı ve fiziksel kontrol tuşları olmayan ESP32-S3 üzerinde çalışan Bruce firmware'ini Android telefondan rahat şekilde kullanabilmek**.
+
+Test edilen yapı:
+
+```text
+ESP32-S3 N16R8
+16 MB Flash + 8 MB PSRAM
+        │
+        │ Native USB / OTG
+        ▼
+Android + Bruce Remote
+```
+
+Uygulama telefonda Bruce ekranını mümkün olduğunca yansıtır; D-Pad, OK ve ESC ile menüler kontrol edilir. Ayrıca Bruce menü seçenekleri Android arayüzünde listelenir, seri terminal ve cihaz bilgileri sunulur.
+
+Android arayüzünün bu sürümü **Google AI Studio kullanılarak, AI destekli ve gerçek donanım üzerinde tekrar tekrar test edilen bir geliştirme süreciyle** hazırlanmıştır. Çalışan Bruce protokolü korunmuş, asıl odak mobil arayüz, kullanım kolaylığı ve bağlantı kararlılığı olmuştur.
+
+Ekran yansıtma gerçek framebuffer aktarımı değildir; Bruce'un gönderdiği TFT çizim komutları Android'de tekrar çizilir. Bu nedenle bazı ikon/sprite parçalarının eksik görünmesi bilinen bir sınırlamadır.
+
+---
+
+If you test another board successfully, consider opening an issue with the board model, USB chipset/VID:PID, Bruce version and Android version so the compatibility list can grow from real hardware reports.
