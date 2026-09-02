@@ -1,0 +1,92 @@
+name: Build BruceButBetter SSD1306 Port
+
+on:
+  push:
+    branches: [ brucebutbetter-ssd1306-build ]
+    paths:
+      - '.github/workflows/build-brucebutbetter-ssd1306.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout host repo
+        uses: actions/checkout@v4
+
+      - name: Checkout BruceButBetter
+        uses: actions/checkout@v4
+        with:
+          repository: Yoursel71/BruceButBetter
+          ref: master
+          path: BruceButBetter
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install PlatformIO and esptool
+        run: pip install platformio esptool
+
+      - name: Patch board for our ESP32-S3 N16R8 + SSD1306
+        working-directory: BruceButBetter
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('boards/ESP-General/ESP-General.ini')
+          s = p.read_text()
+          replacements = {
+              '-DGROVE_SCL=18': '-DGROVE_SCL=9',
+              '-DLOVYAN_PANEL=Panel_SH110x': '-DLOVYAN_PANEL=Panel_SSD1306',
+              '-DTFT_SCL=18': '-DTFT_SCL=9',
+              '-DCC1101_GDO0_PIN=9': '-DCC1101_GDO0_PIN=17',
+          }
+          for old, new in replacements.items():
+              if old not in s:
+                  raise SystemExit(f'Missing expected config: {old}')
+              s = s.replace(old, new)
+          p.write_text(s)
+          print('Patched display: SSD1306 128x64, SDA=8, SCL=9, addr=0x3C')
+          print('Moved CC1101 GDO0 away from GPIO9 to GPIO17 to avoid I2C conflict')
+          PY
+
+      - name: Show effective OLED config
+        working-directory: BruceButBetter
+        run: |
+          grep -E 'GROVE_SD|GROVE_SC|LOVYAN_PANEL|TFT_SDA|TFT_SCL|TFT_ADDR|TFT_WIDTH|TFT_HEIGHT|CC1101_GDO0' boards/ESP-General/ESP-General.ini
+
+      - name: Build ESP32-S3 N16R8 firmware
+        working-directory: BruceButBetter
+        run: pio run -e esp32-s3-devkitc-1-psram
+
+      - name: Create single merged BIN for Android flasher
+        working-directory: BruceButBetter
+        run: |
+          BUILD=.pio/build/esp32-s3-devkitc-1-psram
+          test -f "$BUILD/firmware.bin"
+          test -f "$BUILD/bootloader.bin"
+          test -f "$BUILD/partitions.bin"
+
+          BOOT_APP0=$(find "$HOME/.platformio" -type f -name boot_app0.bin | head -n 1)
+          test -n "$BOOT_APP0"
+
+          python -m esptool --chip esp32s3 merge-bin \
+            -o BruceButBetter-ESP32-S3-N16R8-SSD1306-MERGED.bin \
+            --flash-mode dio --flash-freq 80m --flash-size 16MB \
+            0x0000 "$BUILD/bootloader.bin" \
+            0x8000 "$BUILD/partitions.bin" \
+            0xe000 "$BOOT_APP0" \
+            0x10000 "$BUILD/firmware.bin"
+
+          cp "$BUILD/firmware.bin" BruceButBetter-ESP32-S3-N16R8-SSD1306-APP.bin
+          sha256sum BruceButBetter-ESP32-S3-N16R8-SSD1306-*.bin
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: BruceButBetter-ESP32-S3-N16R8-SSD1306
+          path: |
+            BruceButBetter/BruceButBetter-ESP32-S3-N16R8-SSD1306-MERGED.bin
+            BruceButBetter/BruceButBetter-ESP32-S3-N16R8-SSD1306-APP.bin
+          if-no-files-found: error
