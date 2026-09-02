@@ -3,8 +3,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define SDA_PIN 8
-#define SCL_PIN 9
+#define SDA_PIN 9
+#define SCL_PIN 8
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 
@@ -22,7 +22,7 @@ void setup() {
   display.println("OLED OK!");
   display.setTextSize(1);
   display.setCursor(8, 42);
-  display.println("ESP32-S3 GPIO8/9");
+  display.println("SDA9 / SCL8");
   display.display();
 }
 
