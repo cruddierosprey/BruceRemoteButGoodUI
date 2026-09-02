@@ -1,0 +1,24 @@
+name: Build ESP32-S3 OLED Test
+on:
+  push:
+    branches: [ oled-test-build ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install PlatformIO
+        run: pip install platformio
+      - name: Build
+        working-directory: oled-test
+        run: pio run
+      - name: Prepare firmware
+        run: cp oled-test/.pio/build/esp32-s3-devkitc-1/firmware.bin ESP32-S3-OLED-TEST.bin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ESP32-S3-OLED-TEST
+          path: ESP32-S3-OLED-TEST.bin
