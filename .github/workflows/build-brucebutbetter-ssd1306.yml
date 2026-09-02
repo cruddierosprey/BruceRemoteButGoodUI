@@ -57,8 +57,25 @@ jobs:
           grep -E 'GROVE_SD|GROVE_SC|LOVYAN_PANEL|TFT_SDA|TFT_SCL|TFT_ADDR|TFT_WIDTH|TFT_HEIGHT|CC1101_GDO0' boards/ESP-General/ESP-General.ini
 
       - name: Build ESP32-S3 N16R8 firmware
+        id: build
+        continue-on-error: true
         working-directory: BruceButBetter
-        run: pio run -e esp32-s3-devkitc-1-psram
+        shell: bash
+        run: |
+          set -o pipefail
+          pio run -e esp32-s3-devkitc-1-psram 2>&1 | tee ../build.log
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: BruceButBetter-build-log
+          path: build.log
+          if-no-files-found: error
+
+      - name: Fail if build failed
+        if: steps.build.outcome != 'success'
+        run: exit 1
 
       - name: Create single merged BIN for Android flasher
         working-directory: BruceButBetter
