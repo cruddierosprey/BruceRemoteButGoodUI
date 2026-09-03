@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: cruddierosprey/firmware
-          ref: ad2b69619d2a85fe8c08634bb22bc3a432000311
+          ref: 0ebc6049158c207beec9e12f224fb34716bc5df1
           path: firmware
 
       - name: Setup Python
@@ -44,7 +44,7 @@ jobs:
       - name: Upload firmware artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Bruce-SSD1306-ESP32S3-N16R8
+          name: Bruce-SSD1306-ESP32S3-N16R8-v2
           path: |
             firmware/Bruce-esp32-s3-devkitc-1-psram.bin
             firmware/build-esp32-s3-devkitc-1-psram.log
