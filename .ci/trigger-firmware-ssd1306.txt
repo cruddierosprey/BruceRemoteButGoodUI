@@ -1,1 +1,1 @@
-Trigger one-shot build for cruddierosprey/firmware commit 6cc003a15f6f11e27a952fa651a041c5fe3f8ebc
+Trigger one-shot build for cruddierosprey/firmware commit ad2b69619d2a85fe8c08634bb22bc3a432000311
