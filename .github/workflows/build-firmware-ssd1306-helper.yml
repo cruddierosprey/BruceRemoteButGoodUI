@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: cruddierosprey/firmware
-          ref: 6cc003a15f6f11e27a952fa651a041c5fe3f8ebc
+          ref: ad2b69619d2a85fe8c08634bb22bc3a432000311
           path: firmware
 
       - name: Setup Python
