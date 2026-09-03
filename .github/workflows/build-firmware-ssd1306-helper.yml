@@ -63,7 +63,7 @@ jobs:
             Bruce-SSD1306-Adafruit-merged-0x0.bin -> 0x0000
 
           Separate-file flash:
-            bootloader-0x0.bin   -> 0x0000
+            bootloader-0x0.bin     -> 0x0000
             partitions-0x8000.bin -> 0x8000
             boot_app0-0xe000.bin  -> 0xE000 (only if this file is present)
             firmware-0x10000.bin  -> 0x10000
@@ -87,3 +87,5 @@ jobs:
             firmware/build-esp32-s3-devkitc-1-psram.log
           if-no-files-found: error
           retention-days: 1
+
+# v3 trigger
