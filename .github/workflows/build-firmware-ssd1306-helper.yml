@@ -87,3 +87,5 @@ jobs:
             firmware/build-esp32-s3-devkitc-1-psram.log
           if-no-files-found: error
           retention-days: 1
+
+# v3 trigger
