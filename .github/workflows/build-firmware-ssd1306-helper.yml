@@ -1,0 +1,52 @@
+name: One-shot Firmware SSD1306 Build
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  build:
+    if: github.event.issue.title == 'BUILD_FIRMWARE_SSD1306_N16R8'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout firmware fork
+        uses: actions/checkout@v4
+        with:
+          repository: cruddierosprey/firmware
+          ref: 6cc003a15f6f11e27a952fa651a041c5fe3f8ebc
+          path: firmware
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends gcc-multilib libc6-dev-i386
+          pip install requests esptool intelhex platformio
+
+      - name: Build ESP32-S3 DevKitC N16R8
+        working-directory: firmware
+        shell: bash
+        run: |
+          set -o pipefail
+          platformio run -e esp32-s3-devkitc-1-psram 2>&1 | tee build-esp32-s3-devkitc-1-psram.log
+
+      - name: Verify merged firmware
+        working-directory: firmware
+        run: |
+          test -f Bruce-esp32-s3-devkitc-1-psram.bin
+          sha256sum Bruce-esp32-s3-devkitc-1-psram.bin
+          ls -lh Bruce-esp32-s3-devkitc-1-psram.bin
+
+      - name: Upload firmware artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bruce-SSD1306-ESP32S3-N16R8
+          path: |
+            firmware/Bruce-esp32-s3-devkitc-1-psram.bin
+            firmware/build-esp32-s3-devkitc-1-psram.log
+          if-no-files-found: error
+          retention-days: 1
