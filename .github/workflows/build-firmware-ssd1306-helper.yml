@@ -1,12 +1,12 @@
 name: One-shot Firmware SSD1306 Build
 
 on:
-  issues:
-    types: [opened]
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   build:
-    if: github.event.issue.title == 'BUILD_FIRMWARE_SSD1306_N16R8'
+    if: github.event.pull_request.title == 'BUILD_FIRMWARE_SSD1306_N16R8'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout firmware fork
